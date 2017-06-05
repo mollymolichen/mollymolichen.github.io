@@ -1067,6 +1067,11 @@ img {
   max-width: 100%;
   height: auto
 }
+.img-logo {
+  height: 70px; 
+  padding-bottom: 15px;
+  padding-right: 5px;
+}
 .img-propic {
   padding-top: 80px;
   height: 350px;
