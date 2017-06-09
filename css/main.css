@@ -14,9 +14,10 @@ h6 {
 }
 p {
   font-family: 'Roboto', sans-serif;
-  line-height: 22px;
+  line-height: 28px;
   font-size: 16px;
   font-weight: 300;
+  text-align: justify;
 }
 ul {
   padding-left: 0;
@@ -26,6 +27,7 @@ ul li {
 }
 .bullet-ul{
   margin-left: 3em;
+  line-height: 24px;
 }
 h2 {
   font-size: 26px;
@@ -1087,4 +1089,23 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dataplus {
+  float: left;
+  display: inline-block;
+}
+.dataplus-img {
+  width: 525px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.dataplus-poster {
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.social-container {
+  float: left;
+  padding-top: 20px;
 }

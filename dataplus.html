@@ -100,27 +100,8 @@
                                     </ul>
                                 </div>
                             </li>
-                            <!--<li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="blog-fullwidth.html">Blog Full</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
-                                    </ul>
-                                </div>
-                            </li>-->
+                            <li><a href="advocacy.html">Advocacy</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            
                         </ul>
                     </div>
                 </nav>
@@ -160,7 +141,7 @@
                                     During the summer of 2016, I researched under a program at the Information Initiative at Duke (iiD) called Data+. Data+ consisted of 25 projects for the summer, each with their own research objectives and mentors. Alongside Dr. Laura Sheble from the Duke Network Analysis Center, Dr. James Moody from the Department of Sociology and another undergraduate, I spent ten weeks modeling networks of comorbid disease. The purpose of the project was to model Electronic Health Record (EHR) patient data within a network to identify patterns of which diseases are often diagnosed together for what demographic, creating a predictive model for healthcare professionals to validate their diagnoses against.
                                 </p>
                                 <blockquote>
-                                    Visit the website <a href="http://colab-sbx-296.oit.duke.edu/global_network/formattedWebsite.html">here</a>.
+                                    Visit the website <a href="http://colab-sbx-296.oit.duke.edu/global_network/formattedWebsite.html" target="_blank">here</a>.
                                 </blockquote>
                                 <h3>Dataset</h3>
                                 <p>
@@ -178,147 +159,74 @@
                                     <li>Gender: M/F</li>
                                 </ul>
                                 <h3>Methods</h3>
+                                <ul class="bullet-ul">
+                                    <li><strong>JavaScript's D3:</strong> data visualization library to create basic node-edge list, with nodes representing ICD-9 codes and edges connecting earlier nodes to later nodes; each edge represents a patient with unique age, ethnicity and gender</li>
+                                    <li><strong>Gephi:</strong> graph visualization software that produced static graph based on CSV spreadsheets</li>
+                                    <li><strong>Sigma JS:</strong> final JavaScript library used to model a full node network</li>
+                                    <li><strong>HTML/CSS:</strong> used to design website for global and ego network layout</li>  
+                                </ul>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nostrum consectetur voluptatibus, odio ea ab distinctio, nulla asperiores facere sequi dolorum molestiae magni sed velit officia rerum illo necessitatibus consequatur maiores magnam possimus voluptas suscipit praesentium iste! Praesentium, modi, illum. Sint quis eos expedita porro voluptatum reiciendis minus vitae atque deleniti eligendi nulla, dolorem adipisci, assumenda sunt modi suscipit inventore hic nostrum veniam, ea accusantium quisquam! Ipsum odio, ducimus magnam nam ad quaerat soluta, ab laudantium beatae eius iusto fugit blanditiis laboriosam cupiditate dolor aut nulla a quam dolores? Unde, sunt, explicabo sapiente quos reiciendis iste fuga atque esse voluptatem.
+                                    We parsed data into CSV format organized by the parameters above. Then we loaded it into Gephi to produce a static graph, then used a Sigma JS plugin to translate the static graph into an interactive one. The ego-network shows closer connections between specific diseases, drawing the user's search query as a mySQL request and displaying the appropriate subset of the network.
                                 </p>
                             </div>
-                            <ul class="social-share">
-                                <h4>Share this article</h4>
-                                <li>
-                                    <a href="#" class="Facebook">
-                                        <i class="ion-social-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Twitter">
-                                        <i class="ion-social-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Google Plus">
-                                        <i class="ion-social-googleplus"></i>
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
+                            <div class="dataplus">
+                                <img class="dataplus-img" src="images/dataplus/left.png"/>
+                                <img class="dataplus-img" src="images/dataplus/right.png"/>
+                                <img class="dataplus-img" src="images/dataplus/1.png"/>
+                                <img class="dataplus-img" src="images/dataplus/2.png"/>
+                                <img class="dataplus-img" src="images/dataplus/3.png"/>
+                                <img class="dataplus-img" src="images/dataplus/4.png"/>
+                                <img class="dataplus-poster" src="images/dataplus/poster.png"/>
+                            </div>
+                            <p><center>Scientific poster. © 2016 Molly Chen and Emily Wu</center></p>
+                            <div class="social-container">
+                                <ul class="social-share">
+                                    <h4>Share this article</h4>
+                                    <li>
+                                        <a href="#" class="Facebook">
+                                            <i class="ion-social-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Twitter">
+                                            <i class="ion-social-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Linkedin">
+                                            <i class="ion-social-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Google Plus">
+                                            <i class="ion-social-googleplus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="comments">
-                                <div class="media">
-                                    <a href="" class="pull-left">
-                                        <img alt="" src="images/avater.jpg" class="media-object">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">
-                                        Jonathon Andrew</h4>
-                                        <p class="text-muted">
-                                            12 July 2013, 10:20 PM
-                                        </p>
-                                        <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                                        </p>
-                                        <a href="">Reply</a>
-                                        <hr>
-                                        <!-- Nested media object -->
-                                        <div class="media">
-                                            <a href="" class="pull-left">
-                                                <img alt="" src="images/avater-1.jpg" class="media-object">
-                                            </a>
-                                            <div class="media-body">
-                                                <h4 class="media-heading">
-                                                Tom Cruse </h4>
-                                                <p class="text-muted">
-                                                    12 July 2013, 10:20 PM
-                                                </p>
-                                                <p>
-                                                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!--end media-->
-                                        <hr>
-                                        <div class="media">
-                                            <a href="" class="pull-left">
-                                                <img alt="" src="images/avater-1.jpg" class="media-object">
-                                            </a>
-                                            <div class="media-body">
-                                                <h4 class="media-heading">
-                                                Nicolus Carolus </h4>
-                                                <p class="text-muted">
-                                                    12 July 2013, 10:20 PM
-                                                </p>
-                                                <p>
-                                                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!--end media-->
-                                    </div>
+                    <div class="post-comment">
+                        <h3>Leave a Reply</h3>
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-lg-6">
+                                         <input type="text" class="col-lg-12 form-control" placeholder="Name">
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <input type="text" class="col-lg-12 form-control" placeholder="Email">
+                                     </div>
                                 </div>
-                                <div class="media">
-                                    <a href="" class="pull-left">
-                                        <img alt="" src="images/avater-2.jpg" class="media-object">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">
-                                        Rob Martin</h4>
-                                        <p class="text-muted">
-                                            12 July 2013, 10:20 PM
-                                        </p>
-                                        <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                                        </p>
-                                        <a href="">Reply</a>
-                                    </div>
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                         <textarea class=" form-control" rows="8" placeholder="Message"></textarea>
+                                     </div>
                                 </div>
-                                <div class="media">
-                                    <a href="" class="pull-left">
-                                        <img alt="" src="images/avater-2.jpg" class="media-object">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">
-                                        Mastarello </h4>
-                                        <p class="text-muted">
-                                            12 July 2013, 10:20 PM
-                                        </p>
-                                        <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                                        </p>
-                                        <a href="">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-comment">
-                                <h3>Leave a Reply</h3>
-                                <form role="form" class="form-horizontal">
-                                    <div class="form-group">
-                                        <div class="col-lg-6">
-                                            <input type="text" class="col-lg-12 form-control" placeholder="Name">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="col-lg-12 form-control" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-12">
-                                            <textarea class=" form-control" rows="8" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <p>
-                                    </p>
-                                    <p>
-                                        <button class="btn btn-send" type="submit">Comment</button>
-                                    </p>
-                                    
-                                    <p></p>
+                                <p>
+                                </p>
+                                <p>
+                                    <button class="btn btn-send" type="submit">Comment</button>
+                                </p>
                                 </form>
                             </div>
                             
