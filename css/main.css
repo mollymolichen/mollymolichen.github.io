@@ -22,7 +22,10 @@ ul {
   padding-left: 0;
 }
 ul li {
-  list-style: none;
+  /*list-style: none;*/
+}
+.bullet-ul{
+  margin-left: 3em;
 }
 h2 {
   font-size: 26px;
