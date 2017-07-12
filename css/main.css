@@ -19,6 +19,11 @@ p {
   font-weight: 300;
   text-align: justify;
 }
+
+p.left-justify {
+  text-align: left;
+}
+
 ul {
   padding-left: 0;
 }
@@ -401,7 +406,7 @@ figure figcaption p {
 }
 #feature p {
   line-height: 25px;
-  font-size: 14px;
+  font-size: 16px;
   color: #777777;
 }
 #feature .icon {
@@ -1197,4 +1202,10 @@ a.control_next {
   margin: 10px auto;
   width: 160px;
   font-size: 18px;
+}
+
+/****portfolio section on homepage*******/
+.square-icon {
+  height: 500px;
+  width: 390px;
 }
