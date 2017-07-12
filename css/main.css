@@ -23,7 +23,7 @@ ul {
   padding-left: 0;
 }
 ul li {
-  /*list-style: none;*/
+  font-family: 'Roboto', sans-serif;
 }
 .bullet-ul{
   margin-left: 3em;

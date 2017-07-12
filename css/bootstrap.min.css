@@ -1067,6 +1067,10 @@ img {
   max-width: 100%;
   height: auto
 }
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-dataplus{
+  height: 400px;
+  width: 1200px;
+}
 .img-logo {
   height: 70px; 
   padding-bottom: 15px;
