@@ -1204,8 +1204,6 @@ a.control_next {
   font-size: 18px;
 }
 
-/****portfolio section on homepage*******/
-.square-icon {
-  height: 500px;
-  width: 390px;
+.float-left {
+  float: left;
 }
