@@ -1132,11 +1132,11 @@ html, body {
   font-family: 'Open Sans';
 }
 
-/*h1 {
+h1 {
   color: #fff;
   text-align: center;
   font-weight: 300;
-}*/
+}
 
 #slider {
   position: relative;
@@ -1241,4 +1241,11 @@ a.control_next {
 
 .less-padding-bottom {
   padding-bottom: 0px;
+}
+
+.header-img {
+  width: 1300px;
+  height: 300px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
