@@ -1208,6 +1208,12 @@ a.control_next {
   float: left;
 }
 
+.float-center {
+  float: center;
+  display: block;
+  margin: 0 auto;
+}
+
 /****snps.html****/
 .sxn1 {
   height: 250px;
@@ -1215,6 +1221,24 @@ a.control_next {
   float: left;
 }
 
-.img2 {
+.sxn2 {
+  height: 250px;
+  padding: 0 0 15px 150px;
+  float: left;
+}
 
+.sxn3 {
+  height: 350px;
+  padding: 20px 0 20px;
+  float: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.less-padding {
+  padding: 0 0 0 0;
+}
+
+.less-padding-bottom {
+  padding-bottom: 0px;
 }
