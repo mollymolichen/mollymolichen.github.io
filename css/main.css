@@ -1258,3 +1258,12 @@ a.control_next {
   height: 600px;
   width: 650px;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.img-subtitle {
+  font-style: italic;
+  padding: 10px 0 10px 0;
+}

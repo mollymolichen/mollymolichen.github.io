@@ -130,8 +130,10 @@
                         <div class="col-md-12">
                             <div class="post-img">
                                 <img class="img-responsive header-img-meme" alt="" src="images/meme/header.png">
+                                <h2 class="blogpost-title text-center">Try MemeMatch out for yourself <a href="http://meme-app-stuff.herokuapp.com/" target="_blank">here!</a></h2>
                             </div>
                             <div>
+                              <h2 class="blogpost-title">Summary</h2>
                                 <p>
                                     MemeMatch is a fun app I came up with for my databases class, <a href="https://sites.duke.edu/compsci316_01_s2017/" target="_blank">COMPSCI 316</a>. I worked in a team of four to come up with a database-driven web application of our choice. Since meme culture has recently sprung up amongst college students throughout the nation, we decided to incorporate meme images as the main source of data for our app. Furthermore, the growing popularity of dating apps amongst people our age inspired the idea to combine memes and dating apps. We based our interface off of <a href="https://www.gotinder.com/" target="_blank">Tinder</a>, a popular dating app available for iOS and Android smartphones. 
                                 </p>
@@ -139,46 +141,45 @@
                                     Dating with memes&#8212;matching users based on similar meme preferences
                                 </blockquote>
                                 <p>
-                                    Our MemeMatch app is potentially the first of its kind to match users based on common meme interests. We modified Tinder’s interface of ‘swiping right’ on people you are interested in and left on people you are not to fit meme images rather than user profiles. MemeMatch has a like and dislike option for each meme, a simple image-focused design that centers the user’s attention on one image at a time, and a matching algorithm to generate meaningful results from user input.
+                                    Our app’s flow occurs in essentially three steps. The first step is for the user to register on our landing page. The user enters his or her information in the registration form, and when the user clicks on the register button, a request is sent to app.py (our controller) to add a new user into our database. These usernames and passwords are stored in raw format and not hashed or salted because of the prototype nature of our application. If the product gets to a further stage, tools such as Firebase authentication and others may be incorporated for better security. Once the user logs in, they are greeted with their profile page that has their name. They can click on discover and random memes from our server will pop up for them to rate. All of the memes that will appear have various tags associated and when a user clicks “yes” or “no” the TagCount table is updated with the total number of each tag and total tags viewed by the user. 
+                                </p>
+                                <img src="images/meme/profile.png" class="sxn1-meme float-center"/>
+                                <p class="text-center img-subtitle">Your profile page shows you which categories of memes you prefer.</p>
+                                <p>
+                                    Our MemeMatch app is potentially the first of its kind to match users based on common meme interests. We modified Tinder’s interface of ‘swiping right’ on people you are interested in and left on people you are not interested in based on memes rather than user profiles. MemeMatch has a like and dislike option for each meme, a simple image-focused design that centers the user’s attention on one image at a time, and a matching algorithm to generate meaningful results from user input.
                                 </p>
                                 <img src="images/meme/discover.png" class="sxn1-meme float-center"/>
+                                <p class="text-center img-subtitle">Discover new memes and enter your preferences.</p>
+                                <h2 class="blogpost-title">Tags</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nostrum consectetur voluptatibus, odio ea ab distinctio, nulla asperiores facere sequi dolorum molestiae magni sed velit officia rerum illo necessitatibus consequatur maiores magnam possimus voluptas suscipit praesentium iste! Praesentium, modi, illum. Sint quis eos expedita porro voluptatum reiciendis minus vitae atque deleniti eligendi nulla, dolorem adipisci, assumenda sunt modi suscipit inventore hic nostrum veniam, ea accusantium quisquam! Ipsum odio, ducimus magnam nam ad quaerat soluta, ab laudantium beatae eius iusto fugit blanditiis laboriosam cupiditate dolor aut nulla a quam dolores? Unde, sunt, explicabo sapiente quos reiciendis iste fuga atque esse voluptatem.
+                                    The decision to use tags to match users was a major design choice decided by the group. We wanted to match users with similar meme tastes, but similarly to the image tags used in the <a href="http://www.esprockets.com/papers/www2008-jing-baluja.pdf" target="_blank">early implementation of Google Images</a>, it is difficult to classify an image into a specific categories or bins. We were unable to utilize image recognition APIs because of the difficulty of finding any suited for this project. Therefore our team decided to crowdsource the tags for the memes in our database. Memes that show up in the Discover section have been assigned tags by users, so in order to view more memes in Discover, the user is motivated to assign more tags.
                                 </p>
-                            </div>
-                            <ul class="social-share">
-                                <h4>Share this article</h4>
-                                <li>
-                                    <a href="#" class="Facebook">
-                                        <i class="ion-social-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Twitter">
-                                        <i class="ion-social-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Google Plus">
-                                        <i class="ion-social-googleplus"></i>
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
+                                <img src="images/meme/tagmemes.png" class="sxn1-meme float-center"/>
+                                <p class="text-center img-subtitle">Add category tags to our memes.</p>
+                                <h2 class="blogpost-title">Matching Algorithm</h2>
+                                <p>
+                                    Lastly, we used a rank-based algorithm to match users based on the overlap between the memes they like. In our meme database, memes can be assigned multiple tags. We used the “Assign Tag” page to let users to add data into the HasTag table. Then, we put users’ preference data into tagCount table to count the number of memes they like for each tag. With the tagCount table, we made a ranked list of tags for each user.
+                                    <br> <br>
+                                    To ensure that every user would have some matches, and since we have finite number of tags, we decided to match people based on their tag rank. We examined the position shift between two lists with the same elements but different rank. 
+                                    <br> <br>
+                                    RBO (Rank Biased Overlap) algorithm was used to match users. This algorithm not only output a score according to the correlation between the ranked list, but also gave more weights to top ranking items. 
+                                    <br> <br>
+                                    <blockquote>
+                                    For example, the matching score for {1, 2, 3, 4, 5, 6, 7, 8} and {2, 1, 3, 4, 5, 6, 7, 8} <br>will be lower than the score for {1, 2, 3, 4, 5, 6, 7, 8} and {1, 2, 3, 4, 5, 6, 8, 7}.
+                                    </blockquote>
+                                </p>
+                                <p>
+                                    Each match has a unique avatar and is linked to the user's Facebook page to contact. In the future, we want to add a chat feature where the user can directly message matches within the app to establish a connection.
+                                </p>
+                                <img src="images/meme/matches.png" class="sxn1-meme float-center"/>
+                                <p class="text-center img-subtitle">View your matches and contact them via Facebook!</p>
+                            </div>                            
                         </div>
                     </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            
             <!--
             ==================================================
             Call To Action Section Start
@@ -206,35 +207,8 @@
                     <div class="col-md-8">
                         <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
                     </div>
-                    <div class="col-md-4">
-                        <!-- Social Media -->
-                        <ul class="social">
-                            <li>
-                                <a href="#" class="Facebook">
-                                    <i class="ion-social-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Twitter">
-                                    <i class="ion-social-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Linkedin">
-                                    <i class="ion-social-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Google Plus">
-                                    <i class="ion-social-googleplus"></i>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
                 </div>
-                </footer> <!-- /#footer -->
-                
+              </footer> <!-- /#footer -->
             </body>
         </html>
     </html>
