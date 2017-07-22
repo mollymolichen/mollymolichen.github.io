@@ -1230,9 +1230,6 @@ a.control_next {
 .sxn3 {
   height: 350px;
   padding: 20px 0 20px;
-  float: center;
-  display: block;
-  margin: 0 auto;
 }
 
 .less-padding {
@@ -1248,4 +1245,16 @@ a.control_next {
   height: 300px;
   padding-bottom: 20px;
   padding-right: 20px;
+}
+
+/****meme.html****/
+.header-img-meme {
+  width: 1300px;
+  height: 700px;
+  padding-bottom: 20px;
+}
+
+.sxn1-meme {
+  height: 600px;
+  width: 650px;
 }
