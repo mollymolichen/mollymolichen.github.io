@@ -1263,6 +1263,10 @@ a.control_next {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .img-subtitle {
   font-style: italic;
   padding: 10px 0 10px 0;
