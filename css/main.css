@@ -1271,3 +1271,10 @@ a.control_next {
   font-style: italic;
   padding: 10px 0 10px 0;
 }
+
+/****hackduke.html****/
+.hackduke-img {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
