@@ -1255,8 +1255,8 @@ a.control_next {
 }
 
 .sxn1-meme {
-  height: 600px;
-  width: 675px;
+  height: 625px;
+  width: 700px;
 }
 
 .text-center {
@@ -1277,4 +1277,10 @@ a.control_next {
   display: block;
   margin: 0 auto;
   width: 600px;
+}
+
+/***sas.html*****/
+.img-style {
+  width: 725px;
+  padding-top: 20px;
 }
