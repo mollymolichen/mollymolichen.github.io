@@ -26,6 +26,7 @@ p.left-justify {
 
 ul {
   padding-left: 0;
+  line-height: 30px;
 }
 ul li {
   font-family: 'Roboto', sans-serif;
@@ -33,6 +34,9 @@ ul li {
 .bullet-ul{
   margin-left: 3em;
   line-height: 24px;
+}
+.indent {
+  margin-left: 3em;
 }
 h2 {
   font-size: 26px;
@@ -1283,4 +1287,15 @@ a.control_next {
 .img-style {
   width: 725px;
   padding-top: 20px;
+}
+
+.header-img-sas {
+  width: 1200px;
+  height: 525px;
+  padding-bottom: 20px;
+}
+
+#mvc {
+  height: 400px;
+  width: auto;
 }
