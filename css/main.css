@@ -24,6 +24,10 @@ p.left-justify {
   text-align: left;
 }
 
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
 ul {
   padding-left: 0;
   line-height: 30px;
@@ -1100,13 +1104,19 @@ article {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/*Dataplus page*/
+/******dataplus.html******/
 .dataplus {
   float: left;
   display: inline-block;
 }
 .dataplus-img {
   width: 525px;
+  height: auto;
+  padding: 0 20px 20px 40px;
+}
+.dataplus-img-grid {
+  width: 560px;
+  height: 450px;
   padding-bottom: 20px;
   padding-right: 20px;
 }
@@ -1244,6 +1254,10 @@ a.control_next {
   padding-bottom: 0px;
 }
 
+.more-padding-bottom {
+  padding-bottom: 60px;
+}
+
 .header-img {
   width: 1300px;
   height: 300px;
@@ -1281,6 +1295,11 @@ a.control_next {
   display: block;
   margin: 0 auto;
   width: 600px;
+}
+
+.sidebar-img {
+  height: auto;
+  padding-top: 70px;
 }
 
 /***sas.html*****/
