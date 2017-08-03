@@ -1318,3 +1318,10 @@ a.control_next {
   height: 400px;
   width: auto;
 }
+
+/*****advocacy.html******/
+#team-pic {
+  height: 400px;
+  width: 550px;
+  padding-bottom: 30px;
+}
