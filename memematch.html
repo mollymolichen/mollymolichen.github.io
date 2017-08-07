@@ -52,6 +52,35 @@
         <script src="js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="js/main.js"></script>
+        <!--Google Analytics-->
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-104062343-1', 'auto');
+              ga('send', 'pageview');
+        </script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="favicon.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <!--
@@ -71,11 +100,7 @@
                     <!-- /responsive nav button -->
                     
                     <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="index.html" >
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </div>
+                    <img src="images/logo.png" alt="" class="">
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
@@ -85,7 +110,6 @@
                             <li>
                                 <a href="index.html" >Home</a>
                             </li>
-                            <li><a href="about.html">About</a></li>
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<span class="caret"></span></a>
                               <div class="dropdown-menu">
@@ -99,8 +123,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li><a href="advocacy.html">Advocacy</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            
                         </ul>
                     </div>
                 </nav>
@@ -137,9 +161,6 @@
                                 <p>
                                     MemeMatch is a fun app I came up with for my databases class, <a href="https://sites.duke.edu/compsci316_01_s2017/" target="_blank">COMPSCI 316</a>. I worked in a team of four to come up with a database-driven web application of our choice. Since meme culture has recently sprung up amongst college students throughout the nation, we decided to incorporate meme images as the main source of data for our app. Furthermore, the growing popularity of dating apps amongst people our age inspired the idea to combine memes and dating apps. We based our interface off of <a href="https://www.gotinder.com/" target="_blank">Tinder</a>, a popular dating app available for iOS and Android smartphones. 
                                 </p>
-                                <blockquote>
-                                    Dating with memes&#8212;matching users based on similar meme preferences
-                                </blockquote>
                                 <p>
                                     Our app’s flow occurs in essentially three steps. The first step is for the user to register on our landing page. The user enters his or her information in the registration form, and when the user clicks on the register button, a request is sent to app.py (our controller) to add a new user into our database. These usernames and passwords are stored in raw format and not hashed or salted because of the prototype nature of our application. If the product gets to a further stage, tools such as Firebase authentication and others may be incorporated for better security. Once the user logs in, they are greeted with their profile page that has their name. They can click on discover and random memes from our server will pop up for them to rate. All of the memes that will appear have various tags associated and when a user clicks “yes” or “no” the TagCount table is updated with the total number of each tag and total tags viewed by the user. 
                                 </p>

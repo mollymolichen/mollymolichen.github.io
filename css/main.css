@@ -467,6 +467,7 @@ figure figcaption p {
   border: 1px solid rgba(111, 121, 122, 0.3);
   box-shadow: none;
   -webkit-box-shadow: none;
+  font-family: 'Roboto', sans-serif;
 }
 #contact-section textarea {
   display: block;
@@ -483,6 +484,7 @@ figure figcaption p {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  font-family: 'Roboto', sans-serif;
 }
 #contact-section .address,
 #contact-section .email,
@@ -1223,7 +1225,6 @@ a.control_next {
 }
 
 .float-center {
-  float: center;
   display: block;
   margin: 0 auto;
 }
@@ -1317,4 +1318,11 @@ a.control_next {
 #mvc {
   height: 400px;
   width: auto;
+}
+
+/*****advocacy.html******/
+#team-pic {
+  height: 400px;
+  width: 550px;
+  padding-bottom: 30px;
 }
