@@ -10,6 +10,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.a-dark {
+    color: #60A9F0 !important;
+}
+
 .round {
     border-radius: 20px;
 }
