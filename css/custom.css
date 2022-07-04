@@ -9,3 +9,7 @@ a:hover {
     background-color: transparent;
     text-decoration: underline;
 }
+
+.round {
+    border-radius: 20px;
+}
