@@ -1,0 +1,5 @@
+Welcome to my page! I am a technology leader with 6 years of experience in B2B and B2C technology across Big Tech and healthcare industries. My leadership style is to amplify each team member's individual strengths and lead teams with empathy. I adopt a user-focused, data-driven style to stay laser-focused on key business opportunities. I am committed to leveraging technology for social good to help others live their best lives.
+
+I lead the Provider Experience team at Octave, overseeing the development of software system integrations and payor network expansion to enhance patients' access to mental health care. My focus is to streamline provider onboarding, automate payment workflows, and improve provider NPS by collaborating with cross-functional teams and external healthcare vendors.
+
+Previously at Microsoft, I contributed to the growth of Azure's Commercial Marketplace by supporting a 300%+ increase in B2B adoption and leading a $65M revenue reconciliation initiative. Outside of work, I am a neurodiversity advocate, adventurous foodie, tree hugger, and avid crafter. I look forward to hearing from you!
