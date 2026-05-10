@@ -36,13 +36,6 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar-collapse">
-    <!-- preloader section -->
-    <div class="preloader">
-      <div class="sk-spinner sk-spinner-wordpress">
-        <span class="sk-inner-circle"></span>
-      </div>
-    </div>
-
     <!-- header section -->
     <header>
       <div class="container">
@@ -60,6 +53,25 @@
         </div>
       </div>
     </header>
+
+    <!-- primary site nav -->
+    <div class="top-nav-stack">
+      <nav class="site-nav" aria-label="Primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="site-nav-inner round">
+                <ul class="site-nav-list">
+                  <li><a href="#experiences">Experiences</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- about and skills section -->
     <section class="container">
@@ -130,7 +142,7 @@
     <section class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-          <div class="experience round">
+          <div class="experience round" id="experiences">
             <h2 class="white">Experiences</h2>
             <div class="experience-content">
               <h4 class="experience-title accent">Octave</h4>
@@ -166,22 +178,6 @@
                   licensing costs.
                 </li>
               </ul>
-              <a
-                href="molly_portfolio.html"
-                target="_blank"
-                style="
-                  display: inline-block;
-                  margin-top: 8px;
-                  padding: 6px 16px;
-                  background: #60a9f0;
-                  color: #fff;
-                  border-radius: 4px;
-                  font-size: 13px;
-                  font-weight: 700;
-                  text-decoration: none;
-                "
-                >View Product Portfolio &rarr;</a
-              >
             </div>
             <div class="experience-content">
               <h4 class="experience-title accent">Microsoft</h4>
@@ -249,7 +245,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <div class="languages round">
+          <div class="languages round" id="skills">
             <h2>Skills</h2>
             <ul>
               <li>
