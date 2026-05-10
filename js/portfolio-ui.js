@@ -1,12 +1,12 @@
 (function () {
   var GRID_BY_TAB = {
     'consumer-apps': '.consumer-apps-work-grid',
-    completed: '.business-integrations-grid',
+    'business-integrations': '.business-integrations-grid',
   };
 
   var TAB_ROOT_BY_TAB = {
     'consumer-apps': '#tab-consumer-apps',
-    completed: '#tab-completed',
+    'business-integrations': '#tab-business-integrations',
   };
 
   function fieldBlock(label, iconClass, htmlValue) {
@@ -36,25 +36,16 @@
     var titleEl = document.createElement('div');
     titleEl.className = 'prd-card-title';
     titleEl.textContent = card.title || '';
-    var tagsWrap = document.createElement('div');
-    tagsWrap.className = 'squad-tags';
-    (card.squadTags || []).forEach(function (tag) {
-      var s = document.createElement('span');
-      s.className = 'squad-tag';
-      s.textContent = tag;
-      tagsWrap.appendChild(s);
-    });
     left.appendChild(titleEl);
-    left.appendChild(tagsWrap);
 
     var meta = document.createElement('div');
     meta.className = 'prd-card-meta';
     var period = document.createElement('span');
     period.className = 'period-text';
     meta.appendChild(period);
-    if (card.status && card.status.class) {
+    if (card.status) {
       var pill = document.createElement('span');
-      pill.className = 'status-pill ' + card.status.class;
+      pill.className = 'status-pill ';
       pill.textContent = card.status.label || '';
       meta.appendChild(pill);
     }
