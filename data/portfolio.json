@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "id": "consumer-apps",
+      "tabId": "consumer-apps",
+      "title": "Consumer Apps",
+      "titleIcon": "fa-bolt",
+      "countLabel": "8 projects",
+      "cards": [
+        {
+          "title": "Set Your Working Hours",
+          "status": {
+            "label": "Schedule Management"
+          },
+          "problem": "Availability is still therapist-elected, meaning we're only showing 25% of the appointments our competitors are showing.",
+          "metrics": "Primary: Hours of therapist availability per week<br />Secondary: Bookings",
+          "solution": "Therapists set working hours, and we auto-generate bookable times for clients. Anything outside of busy blocks from Google Calendar within working hours is bookable."
+        },
+        {
+          "title": "Simplified Availability Management",
+          "status": {
+            "label": "Schedule Management"
+          },
+          "problem": "High-friction availability creation (12 clicks per timeslot in the EHR) artifically constraints supply and causes therapist frustration.",
+          "metrics": "Primary: Hours of therapist availability per week<br />Secondary: Bookings",
+          "solution": "Build a consolidated calendar that shows Google and EHR appointments in one place, decreasing the time to add new appointments by 75%."
+        },
+        {
+          "title": "Therapist Daily Dashboard",
+          "status": {
+            "label": "Data Insights"
+          },
+          "problem": "Workflows spread across 4+ disparate systems; current daily email has stale data and &lt;10% click rate despite &gt;85% open rate.",
+          "metrics": "Primary: Therapist NPS",
+          "solution": "Therapists can start their day with real-time insights served over a dashboard with caseload insights, one-click access to telehealth appointments, and actionable metrics."
+        },
+        {
+          "title": "Proactive QA For Clinical Excellence",
+          "status": {
+            "label": "QA"
+          },
+          "problem": "QA feedback delayed up to 6 months because our current system was limited to 10 emails/batch. Resulted in QA team spending 4 hrs to audit clinical notes per therapist for audit review.",
+          "metrics": "Quarterly review coverage for all therapists.",
+          "solution": "Build admin QA tool with auditor UI, automated feedback dissemination, and duplicate note detection."
+        },
+        {
+          "title": "Manage Your Active Clients",
+          "status": {
+            "label": "Practice Management"
+          },
+          "problem": "Therapists navigate multiple disconnected systems to find basic client info; no accurate centralized caseload view in Therapist Portal.",
+          "metrics": "Primary: Appointment no-shows<br />Secondary: Therapist NPS",
+          "solution": "Build comprehensive client list in Therapist Portal showing active clients, new vs. established, insurance, measures pending, and quick links."
+        },
+        {
+          "title": "Multi-State Practice",
+          "status": {
+            "label": "Practice Management"
+          },
+          "problem": "Therapists licensed in multiple states can only practice in one, limiting supply in new markets and national payer attractiveness.",
+          "metrics": "Increase supply within our existing network.",
+          "solution": "Configure our EHR to support multi-state availability, display, filtering, and claim processing for multi-state therapists."
+        },
+        {
+          "title": "In-Person Appointments",
+          "status": {
+            "label": "Practice Management"
+          },
+          "problem": "40%+ of therapy clients choose in-person care; Octave lacked infrastructure to support IRL scheduling, billing, and matching.",
+          "metrics": "Increase supply within our existing network.",
+          "solution": "Capture therapist IRL intent/address in our EHR; support IRL availability, matching, encounter management, and IRL-specific claim processing."
+        }
+      ]
+    },
+    {
+      "id": "business-integrations",
+      "tabId": "business-integrations",
+      "title": "Business Integrations",
+      "titleIcon": "fa-check-circle",
+      "titleIconStyle": "color: #3366cc",
+      "countLabel": "12 initiatives",
+      "cards": [
+        {
+          "title": "Two-Way Google Calendar Sync",
+          "status": {
+            "label": "Calendar Integrations"
+          },
+          "problem": "Therapists double-book with competitors because Octave appointments aren't visible on their Google Calendar.",
+          "metrics": "Primary: Hours of therapist availability per week → 10<br />Secondary: Bookings → 200/qtr",
+          "solution": "Write Octave appointments and holds back to therapist's Google Calendar as outbound events."
+        },
+        {
+          "title": "Multi Google Calendar Support",
+          "status": {
+            "label": "Calendar Integrations"
+          },
+          "problem": "20% of therapists have multiple Google calendars but can only connect one, losing busy-block sync coverage.",
+          "metrics": "Primary: Hours of therapist availability per week → 10<br />Secondary: Bookings → 200/qtr",
+          "solution": "Allow therapists to connect up to 10 total calendars to capture the full picture of their schedules."
+        },
+        {
+          "title": "Build a Scalable Relational Therapist Database",
+          "status": {
+            "label": "Business Architecture"
+          },
+          "problem": "Therapist data spread across Airtable and fragmented systems with no internal SSOT; operational brittleness and manual sync burden.",
+          "metrics": "Primary: Number of systems required to process a new therapist record",
+          "solution": "Build a relational SQL database as the internal source of truth for therapist data, replacing Airtable and piecemeal tooling."
+        },
+        {
+          "title": "Self-Service Zendesk Support",
+          "status": {
+            "label": "Support"
+          },
+          "problem": "5× increase in support response times after therapist EHR transition; Slack-based support creates bottlenecks, tracking gaps, and operational burnout.",
+          "metrics": "Primary: Therapist NPS.<br />Secondary: Decrease ZD support tickets by 20%.",
+          "solution": "Implement in-app Zendesk live chat in Therapist Portal (reuse Client Portal model); deprecate Slack as therapist support channel."
+        },
+        {
+          "title": "Staffed Support Channel For Therapists",
+          "status": {
+            "label": "Support"
+          },
+          "problem": "Google Workspace for therapists costs $240K/yr; therapists submit support via Gmail/Slack creating untrackable, unsecured requests.",
+          "metrics": "Eliminate Google Workspace cost ($400K savings); reduce Slack support load.",
+          "solution": "Build in-Portal secure messaging to Zendesk; staff respond via ZD; therapists notified via personal email."
+        },
+        {
+          "title": "Launch Onboarding For New Supply Partner",
+          "status": {
+            "label": "Onboarding"
+          },
+          "problem": "We needed to onboard 10K+ therapists from a new supply partner, but our current onboarding process was not extensible for the new business line at this scale.",
+          "metrics": "Primary: Number of therapists onboarded",
+          "solution": "Use exisitng Tellescope instance to build no-code workflows for therapists to complete enrollment, automate operational workflows (background checks, credentialing, etc.), and receive branded communications."
+        },
+        {
+          "title": "Speed Up Time to Onboard",
+          "status": {
+            "label": "Onboarding"
+          },
+          "problem": "Onboarding spans 6+ systems and takes 47 days on average; 20% of therapists offboard before start date; visibility gaps throughout.",
+          "metrics": "Primary: Time to onboard (47 → &lt;30 days target).",
+          "solution": "Bidirectional Tellescope ↔ therapist database sync; Tellescope as SSOT for therapist status/start date/bookable fields; retire Airtable as source of truth."
+        },
+        {
+          "title": "Normalize and Enrich Insurance Directory Listings",
+          "status": {
+            "label": "Insurance"
+          },
+          "problem": "Need to generate outbound roster of MSO partnership therapists to Partnerships as part of MSO partnership &lt;&gt; Embrace go-live; must scale to 8K therapists.",
+          "metrics": "Primary: Bookings with MSO partnership therapists from Partnerships directory. Initial volume is 10K therapists.",
+          "solution": "1) Ingest MSO partnership CSV roster into therapist database; 2) Produce output file for Cigna directory."
+        },
+        {
+          "title": "Move to a Biweekly Pay Schedule",
+          "status": {
+            "label": "Payments"
+          },
+          "problem": "Therapists don't know what day they'll get paid; bimonthly schedule with 3-day SLA creates inconsistency vs. competitors.",
+          "metrics": "Primary: % of therapists paid according to fixed schedule.",
+          "solution": "Roll out 16th/1st fixed pay schedule for all therapists; pay within 7 calendar days of pay period end."
+        },
+        {
+          "title": "Streamline Payment Infrastructure For Faster Payouts",
+          "status": {
+            "label": "Payments"
+          },
+          "problem": "Each apppointment required 6+ hours to sync before it could be processed for payment, requiring 15+ hrs of manual intervention per pay period.",
+          "metrics": "Primary: Time to sync (6 hrs -> 20 min). Secondary: Reduce ZD tickets by 50%.",
+          "solution": "Reduce time to sync by 95% by creating a new microservice to sync appointment data to the payment processing system."
+        },
+        {
+          "title": "Care Nav Operational Efficiency",
+          "status": {
+            "label": "Operations"
+          },
+          "problem": "CN SOPs have many manual, repeatable steps; workflows span 9+ tools causing task-switching inefficiency; no SSOT for client VOB data.",
+          "metrics": "Operational Efficiency.",
+          "solution": "Automate CN workflows in Tellescope; reduce manual toil in matching, rematching, and consult processes."
+        },
+        {
+          "title": "Launch Tellescope CRM for White-Glove Ops Teams",
+          "status": {
+            "label": "Operations"
+          },
+          "problem": "CN team used 7+ matching spreadsheets that didn't scale; Welkin lacked caseload view; no way to track client lifecycle through care.",
+          "metrics": "Operational Efficiency: Time to Care.",
+          "solution": "Implement Tellescope as centralized CN CRM replacing MatchDash; continuous feature delivery for CN matching, rematching, and lifecycle workflows."
+        },
+        {
+          "title": "Referrals Workstream — Simplify Partner Referral Workflow",
+          "status": {
+            "label": "Insurance"
+          },
+          "problem": "No simple mechanism for partner PCPs to refer clients to Octave; referral process requires multiple manual steps across EHRs.",
+          "metrics": "Target: 5,000 annual referrals.",
+          "solution": "Enable Direct Secure Messaging (DSM) in Epic for partner systems (UCLA Health, etc.) to send referrals with a click."
+        }
+      ]
+    }
+  ]
+}
