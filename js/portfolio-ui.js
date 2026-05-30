@@ -1,4 +1,14 @@
 (function () {
+  function slugify(str) {
+    return str
+      .toLowerCase()
+      .replace(/[—–]/g, '-')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+  }
+
   var GRID_BY_TAB = {
     'consumer-apps': '.consumer-apps-work-grid',
     'business-integrations': '.business-integrations-grid',
@@ -33,8 +43,9 @@
     top.className = 'prd-card-top';
 
     var left = document.createElement('div');
-    var titleEl = document.createElement('div');
+    var titleEl = document.createElement('a');
     titleEl.className = 'prd-card-title';
+    titleEl.href = 'project.html?id=' + slugify(card.title);
     titleEl.textContent = card.title || '';
     left.appendChild(titleEl);
 
@@ -66,6 +77,27 @@
     );
 
     root.appendChild(top);
+
+    if (card.previewUrl) {
+      var preview = document.createElement('div');
+      preview.className = 'prd-card-preview';
+      var iframe = document.createElement('iframe');
+      iframe.src = card.previewUrl;
+      iframe.loading = 'lazy';
+      iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms');
+      iframe.title = (card.title || '') + ' preview';
+      iframe.setAttribute('referrerpolicy', 'no-referrer');
+      preview.appendChild(iframe);
+      var cta = document.createElement('a');
+      cta.href = card.previewUrl;
+      cta.target = '_blank';
+      cta.rel = 'noopener noreferrer';
+      cta.className = 'prd-card-preview-cta';
+      cta.textContent = 'View Live →';
+      preview.appendChild(cta);
+      root.appendChild(preview);
+    }
+
     root.appendChild(body);
     return root;
   }

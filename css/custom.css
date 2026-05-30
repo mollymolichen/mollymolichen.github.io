@@ -583,3 +583,127 @@ body.portfolio-page header hr {
 	width: 80px;
 	margin: 16px auto;
 }
+
+/* Live preview iframe inside portfolio cards */
+.prd-card-preview {
+	position: relative;
+	width: 100%;
+	height: 220px;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+
+.prd-card-preview iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	pointer-events: none;
+}
+
+.prd-card-preview-cta {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0, 0, 0, 0.65);
+	color: #fff;
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.prd-card-preview-cta:hover {
+	background: rgba(0, 0, 0, 0.85);
+	color: #fff;
+}
+
+/* Card title links */
+.prd-card-title a:link,
+.prd-card-title a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Project detail page */
+body.project-page section.about.project-detail-section {
+	background: transparent;
+	padding: 0;
+	min-height: 0;
+	box-shadow: none;
+}
+
+body.project-page section.about.project-detail-section > .container {
+	background: #fff;
+	color: #2c3a5c;
+	padding-top: 36px;
+	padding-bottom: 36px;
+	border-radius: 20px;
+	box-shadow: 0 1px 5px rgba(50, 50, 50, 0.08);
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+body.project-page .status-pill {
+	background: #eafff0;
+	color: #1a8c42;
+	border: 1px solid #b8f0cd;
+}
+
+.project-back-link:link,
+.project-back-link:visited {
+	color: #3366CC;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+
+.project-back-link:hover {
+	color: #1a2e5e;
+}
+
+.project-status-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 12px;
+}
+
+.project-section-badge {
+	font-size: 11px;
+	font-weight: 800;
+	padding: 3px 10px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	background: #e8efff;
+	color: #3366CC;
+	border: 1px solid #c0d0f0;
+}
+
+.project-title {
+	font-size: 28px;
+	font-weight: 800;
+	color: #1a2e5e;
+	margin: 0 0 28px;
+	line-height: 1.3;
+}
+
+.project-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.project-field {
+	border-left: 3px solid #3366CC;
+	padding-left: 16px;
+}
+
+body.project-page .project-preview {
+	height: 360px;
+	margin-bottom: 28px;
+	border-radius: 12px;
+}

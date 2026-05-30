@@ -62,3 +62,16 @@ $(function () {
 	  });
 	});
   });
+
+// On portfolio.html, activate the tab specified by ?tab= in the URL
+$(function () {
+  if (!document.querySelector('.portfolio-section')) return;
+  var params = new URLSearchParams(window.location.search);
+  var tab = params.get('tab');
+  if (!tab) return;
+  document.querySelectorAll('.portfolio-section').forEach(function (s) {
+    s.classList.remove('consumer-apps');
+  });
+  var panel = document.getElementById('tab-' + tab);
+  if (panel) panel.classList.add('consumer-apps');
+});
