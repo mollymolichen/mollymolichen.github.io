@@ -139,12 +139,6 @@ body:not(.portfolio-page) .languages a {
 	color: #000;
 }
 
-/* ── Octave portfolio (portfolio.html); scoped so index.html is unchanged ── */
-
-body.portfolio-page {
-	font-family: 'Nunito', sans-serif !important;
-}
-
 /* Primary nav: same panel width as experience/about (background on .container, not nested .site-nav-inner) */
 body.portfolio-page nav.site-nav > .container {
 	background: #3366cc;

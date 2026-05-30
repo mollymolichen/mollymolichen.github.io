@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import IndexPage from './pages/IndexPage.jsx';
+import HomePage from './pages/HomePage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
 import ProjectPage from './pages/ProjectPage.jsx';
 
@@ -53,7 +53,7 @@ export default function App() {
     <HashRouter>
       <BackgroundSlideshow />
       <Routes>
-        <Route path="/" element={<IndexPage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/project/:id" element={<ProjectPage />} />
       </Routes>

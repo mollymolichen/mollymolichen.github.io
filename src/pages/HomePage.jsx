@@ -4,7 +4,7 @@ import Header from '../components/Header.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
-export default function IndexPage() {
+export default function HomePage() {
   const location = useLocation();
 
   useEffect(() => {
