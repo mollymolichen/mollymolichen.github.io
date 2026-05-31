@@ -6,6 +6,23 @@ import Footer from '../components/Footer.jsx';
 import { loadPortfolioPayload } from '../lib/portfolioDb.js';
 import { slugify } from '../lib/slugify.js';
 
+function toEmbedUrl(url) {
+  try {
+    const u = new URL(url);
+    if ((u.hostname === 'www.youtube.com' || u.hostname === 'youtube.com') && u.pathname === '/watch') {
+      const videoId = u.searchParams.get('v');
+      if (videoId) return `https://www.youtube.com/embed/${videoId}`;
+    }
+    if (u.hostname === 'youtu.be') {
+      const videoId = u.pathname.slice(1);
+      if (videoId) return `https://www.youtube.com/embed/${videoId}`;
+    }
+  } catch {
+    // invalid URL, return as-is
+  }
+  return url;
+}
+
 function FieldBlock({ label, iconClass, html }) {
   return (
     <div className="project-field">
@@ -123,6 +140,37 @@ export default function ProjectPage() {
                           html={card.solution || ''}
                         />
                       </div>
+                      {card.prototypeUrl && (() => {
+                        const embedSrc = toEmbedUrl(card.prototypeUrl);
+                        const isYouTube = embedSrc.includes('youtube.com/embed/');
+                        return (
+                          <div className="project-prototype-section">
+                            <div className="project-prototype-header">
+                              <span className="project-prototype-label">
+                                <i className="fa fa-play-circle" /> Prototype
+                              </span>
+                              <a
+                                href={card.prototypeUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-prototype-open-link"
+                              >
+                                Open in new tab ↗
+                              </a>
+                            </div>
+                            <div className="project-prototype-frame">
+                              <iframe
+                                src={embedSrc}
+                                title={`${card.title} prototype`}
+                                {...(!isYouTube && { sandbox: 'allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation' })}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="no-referrer"
+                                allowFullScreen
+                              />
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </>
                   )}
                 </div>

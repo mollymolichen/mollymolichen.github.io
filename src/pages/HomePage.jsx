@@ -212,19 +212,19 @@ export default function HomePage() {
               <h2>Skills</h2>
               <ul>
                 <li>
-                  <strong>AI Tools: </strong>Claude Code, Cursor, Figma Make, Agentic AI, RPA, CRM
+                  <strong>AI Tools: </strong>Claude Code, Cursor, Figma Make, Agentic AI, RPA, CRM, Tellescope, Tray.ai, Felicity RPA
                 </li>
                 <li>
                   <strong>Languages: </strong>Python, C#, Java, TypeScript, PowerShell, Bash
                 </li>
                 <li>
-                  <strong>Frameworks: </strong>Angular, Vue
+                  <strong>Frameworks: </strong>Angular, Vue, React
                 </li>
                 <li>
                   <strong>Cloud and Infra: </strong>Azure, AWS, GCP, Kubernetes, Docker, AKS
                 </li>
                 <li>
-                  <strong>Data: </strong>SQL, PostgreSQL, S3, Kusto
+                  <strong>Data: </strong>SQL, PostgreSQL, Kusto
                 </li>
                 <li>
                   <strong>Analytics: </strong>Tableau, Iterable, Hex, Mixpanel
