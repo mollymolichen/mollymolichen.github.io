@@ -78,7 +78,8 @@ Edit `public/data/portfolio.json`. Each card under a section's `cards` array sup
   "problem": "HTML string",
   "metrics": "HTML string",
   "solution": "HTML string",
-  "previewUrl": "https://..."   // optional — renders an iframe preview on the card and detail page
+  "previewUrl": "https://...",   // optional — renders an iframe preview on the card and detail page
+  "prototypeUrl": "https://..."  // optional — renders an interactive embedded prototype (e.g. Lovable link) on the detail page only, with an "Open in new tab" link
 }
 ```
 
