@@ -93,7 +93,8 @@
           },
           "problem": "Therapists double-book with competitors because Octave appointments aren't visible on their Google Calendar.",
           "metrics": "Primary: Weekly therapist availability<br />Secondary: Bookings",
-          "solution": "Write Octave appointments and holds back to therapist's Google Calendar as outbound events."
+          "solution": "Write Octave appointments and holds back to therapist's Google Calendar as outbound events.",
+          "prototypeUrl": "https://therapisthub.lovable.app/availability"
         },
         {
           "title": "Multi Google Calendar Support",
@@ -120,7 +121,8 @@
           },
           "problem": "5× increase in support response times after therapist EHR transition; Slack-based support creates bottlenecks, tracking gaps, and operational burnout.",
           "metrics": "Primary: Therapist NPS.<br />Secondary: Decrease support tickets by 20%.",
-          "solution": "Implement in-app Zendesk live chat in Therapist Portal (reuse Client Portal model); deprecate Slack as therapist support channel."
+          "solution": "Implement in-app Zendesk live chat in Therapist Portal (reuse Client Portal model); deprecate Slack as therapist support channel.",
+          "prototypeUrl": "https://therapisthub.lovable.app/dashboard-v2"
         },
         {
           "title": "Support Messaging For Therapists",
@@ -178,7 +180,8 @@
           },
           "problem": "Each appointment required 6+ hours to sync before it could be processed for payment, requiring 15+ hrs of manual intervention per pay period.",
           "metrics": "Primary: Time to sync (6 hrs -> 20 min). Secondary: Reduce ZD tickets by 50%.",
-          "solution": "Reduce time to sync by 95% by creating a new microservice to sync appointment data to the payment processing system."
+          "solution": "Reduce time to sync by 95% by creating a new microservice to sync appointment data to the payment processing system.",
+          "prototypeUrl": "https://youtu.be/JSqL4u_WKHA"
         },
         {
           "title": "Care Nav Operational Efficiency",
@@ -196,7 +199,8 @@
           },
           "problem": "CN team used 7+ matching spreadsheets that didn't scale; Welkin lacked caseload view; no way to track client lifecycle through care.",
           "metrics": "Time To Match",
-          "solution": "Implement Tellescope as centralized CN CRM replacing MatchDash; continuous feature delivery for CN matching, rematching, and lifecycle workflows."
+          "solution": "Implement Tellescope as centralized CN CRM replacing MatchDash; continuous feature delivery for CN matching, rematching, and lifecycle workflows.",
+          "prototypeUrl": "https://youtu.be/B_kmBQ-RGhM"
         },
         {
           "title": "Referrals Workstream — Simplify Partner Referral Workflow",

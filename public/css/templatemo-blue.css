@@ -17,7 +17,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-h1 {font-size:40px;}
+h1 {font-size:60px;}
 h2 {font-size:36px;}
 h3 {font-size:30px;}
 h4 {font-size:24px;}
@@ -142,8 +142,8 @@ header {
   min-height: 400px;
   overflow: hidden;
   position: relative;
-  padding-top: 160px;
-  padding-bottom: 140px;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 header img {
   display: inline-block !important;
@@ -190,10 +190,6 @@ header hr {
 }
 .education h5 {
   display: inline-block;
-}
-.education span {
-  padding-right: 10px;
-  padding-left: 20px;
 }
 
 /* languages section */

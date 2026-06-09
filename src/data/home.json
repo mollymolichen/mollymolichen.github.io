@@ -1,0 +1,77 @@
+{
+  "header": [
+    { "name": "Molly Chen", "title": "Technical Product Manager" }
+  ],
+  "about": {
+    "paragraphs": [
+      "Hello there!",
+      "I'm an ex-Microsoftie now working as a product manager at <a href=\"https://www.findoctave.com/\" target=\"_blank\" style=\"color: #60a9f0\">Octave</a>, building tools for therapists to deliver premium, effective, and accessible mental healthcare.",
+      "I'm an engineer at heart and a product manager by experience. My overarching career goal is to leverage technology to help others live their best lives."
+    ]
+  },
+  "education": [
+    {
+      "school": "Duke University",
+      "degree": "BS in Computer Science, Minor in Psychology",
+      "techLinks": [
+        { "text": "Duke Technology Scholars", "href": "https://dtech.duke.edu/" },
+        { "text": "Rewriting the Code", "href": "https://rewritingthecode.org/" },
+        { "text": "HackDuke", "href": "https://hackduke.org/" }
+      ],
+      "projectLinks": [
+        { "text": "Zingo", "href": "https://the-weekendr.web.app/" },
+        { "text": "Ethical Tech", "href": "https://ethicaltech.duke.edu/" },
+        { "text": "Lend a Hand", "href": "https://docs.google.com/presentation/d/137lLTunw2p6x7uefesHlBdUwL_pF8NbVeT1BFlUbs9E/edit?usp=sharing" },
+        { "text": "Graducate", "href": "https://grunch-c487c.web.app/" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Octave",
+      "title": "Product Manager",
+      "bullets": [
+        "Leading a remote-first team of 10 engineers as the only product manager on the therapist experience team.",
+        "Designed a consolidated Google calendar app using Cobalt RPA and Nylas Calendar API, decreasing schedule management upkeep by 75%, and adding 2000 new timeslots from 600 adopted providers to booking pages within the first month of launch.",
+        "Built end-to-end onboarding workflows using Tellescope CRM and Felicity RPA for a forecasted volume of 5000+ providers enrolling in a B2B2C payor partnership, streamlining the hiring workflow for TA teams to reduce manual handoff by 50%.",
+        "Led the design and launch of a database supporting provider biographies on client booking pages (150K+ monthly visits), ingesting 50+ data fields to generate 15k provider bios weekly, and serving consumer requests at 99.9% availability.",
+        "Streamlined 3+ legacy systems by building B2C end-to-end onboarding workflows in Tellescope CRM, syncing hourly with the provider database, partnering with engineering on monitoring and diff alerts, and saving $400K annually in licensing costs."
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "title": "Technical Program Manager II",
+      "bullets": [
+        "Orchestrating data ingestion platforms to enable the $50B Azure business to transact commercial offerings via the <a href=\"https://partner.microsoft.com/en-us/solutions/the-commercial-marketplace\" target=\"_blank\">Commercial Marketplace</a>.",
+        "Contributed to a 500%+ growth in Marketplace adoption from FY21-FY23. Leading cross-functional teams of 50+ members to orchestrate data ingestion for Azure products into Commerce."
+      ]
+    },
+    {
+      "company": "Matcha",
+      "title": "Technical Lead",
+      "bullets": [
+        "Provided product strategy and technical consulting for a 15-person <a href=\"https://www.crunchbase.com/organization/matcha-065c\" target=\"_blank\">startup</a> in the mental health space.",
+        "Created and executed product roadmap for a relationship-based AI-powered algorithm to match clients with therapists. Led the engineering, design, and product teams to launch MVP website, securing $0.25M in seed funding."
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "title": "Software Engineer II",
+      "bullets": [
+        "Service owner for 2 big-data ingestion services that manage $4B+ in first-party commercial product revenue.",
+        "Slashed most-used page load time by 75% by optimizing C# .NET query performance and adding 10 new alerts in Azure Application Insights to detect performance anomalies.",
+        "Drove cross-collaboration with Shanghai team to migrate all price-publishing services from Azure Cloud Services to Azure Kubernetes in 3 months. Created documentation to guide the team through Docker and YML setup, deployment, and testing."
+      ]
+    }
+  ],
+  "skills": [
+    { "label": "AI Tools", "items": "Claude Code, Cursor, Figma Make, Agentic AI, RPA, CRM, Tellescope, Tray.ai, Felicity AI" },
+    { "label": "Languages", "items": "Python, C#, Java, TypeScript, PowerShell, Bash" },
+    { "label": "Frameworks", "items": "Angular, Vue, React" },
+    { "label": "Cloud and Infra", "items": "Azure, AWS, GCP, Kubernetes, Docker, AKS" },
+    { "label": "Data", "items": "SQL, PostgreSQL, Kusto" },
+    { "label": "Analytics", "items": "Tableau, Iterable, Hex, Mixpanel" },
+    { "label": "Industries", "items": "Healthcare, Big Tech, Startups (Series A-C), B2B, B2C, Legal" },
+    { "label": "Leadership", "items": "Cross-functional team leadership, stakeholder management" }
+  ]
+}
