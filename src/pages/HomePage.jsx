@@ -28,7 +28,7 @@ export default function HomePage() {
         <div className="row">
           <div className="col-md-5 col-sm-12">
             <div className="about round">
-              <h2 className="accent">About Me</h2>
+              <h2 className="accent">About Me</h2><br></br>
               <p>Hello there!</p>
               <p>
                 I&apos;m an ex-Microsoftie now working as a product manager at{' '}
@@ -45,7 +45,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="col-md-7 col-sm-12">
-            <div className="skills round">
+            <div className="education round">
               <h2 className="white">Education</h2>
               <div className="education-content">
                 <h4 className="education-title accent">Duke University</h4>
@@ -101,7 +101,7 @@ export default function HomePage() {
         <div className="row">
           <div className="col-md-8 col-sm-12">
             <div className="experience round" id="experiences">
-              <h2 className="white">Experiences</h2>
+              <h2 className="white">Experience</h2>
               <div className="experience-content">
                 <h4 className="experience-title accent">Octave</h4>
                 <h6>
@@ -208,8 +208,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="col-md-4 col-sm-12">
-            <div className="languages round" id="skills">
-              <h2>Skills</h2>
+            <div className="skills round" id="skills">
+              <h2 className="accent">Skills</h2>
               <ul>
                 <li>
                   <strong>AI Tools: </strong>Claude Code, Cursor, Figma Make, Agentic AI, RPA, CRM, Tellescope, Tray.ai, Felicity RPA
