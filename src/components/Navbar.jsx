@@ -29,12 +29,12 @@ export default function Navbar() {
               <div className="site-nav-inner round">
                 <ul className="site-nav-list">
                   <li>
-                    <Link to="/" state={{ scrollTo: 'experiences' }}>Experience</Link>
+                    <Link to="/" state={{ scrollTo: 'experiences' }} class="lazydog">Experience</Link>
                   </li>
-                  <li className={`site-nav-dropdown-wrap${open ? ' is-open' : ''}`} ref={wrapRef}>
+                  <li className={`site-nav-dropdown-wrap${open ? ' is-open' : ''}`} ref={wrapRef} class="lazydog">
                     <a
                       href="#"
-                      className="site-nav-dropdown-trigger"
+                      className="site-nav-dropdown-trigger lazydog"
                       id="portfolioMenuTrigger"
                       aria-expanded={String(open)}
                       aria-haspopup="true"
@@ -62,7 +62,7 @@ export default function Navbar() {
                     </ul>
                   </li>
                   <li>
-                    <Link to="/" state={{ scrollTo: 'skills' }}>Skills</Link>
+                    <Link to="/" state={{ scrollTo: 'skills' }} class="lazydog">Skills</Link>
                   </li>
                 </ul>
               </div>

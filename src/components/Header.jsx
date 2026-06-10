@@ -13,7 +13,7 @@ export default function Header() {
               alt="Molly Chen"
             />
             <br /><br /><br /><br />
-            <h1 className="tm-title bold shadow accent">{header.name}</h1>
+            <h1 className="bold shadow">{header.name}</h1>
             <h2 className="white bold shadow">{header.title}</h2>
           </div>
         </div>

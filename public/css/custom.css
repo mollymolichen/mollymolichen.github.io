@@ -9,8 +9,13 @@ html {
 	scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .lazydog {
 	font-family: 'LazyDog', 'Nunito', sans-serif;
+}
+
+h1 {
+	color: #D9FF66;
+	margin-bottom: 4px;
 }
 
 .top-nav-stack {
@@ -171,7 +176,6 @@ body.portfolio-page nav.site-nav .site-nav-inner {
 
 /* Header overrides (portfolio page only) */
 body.portfolio-page header {
-	/* background: linear-gradient(135deg, #0d1b3e 0%, #1a2e5e 50%, #0d1b3e 100%); */
 	padding-top: 80px;
 	padding-bottom: 60px;
 	min-height: auto;
@@ -192,11 +196,6 @@ body.portfolio-page .profile-photo {
 	border: 4px solid rgba(217, 255, 102, 0.4);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 	line-height: 1;
-}
-
-body.portfolio-page header h1 {
-	color: #fff;
-	margin-bottom: 4px;
 }
 
 body.portfolio-page header .header-sub {

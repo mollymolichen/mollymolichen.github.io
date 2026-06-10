@@ -116,7 +116,7 @@ export default function PortfolioPage() {
   const activeTab = searchParams.get('tab') || 'consumer-apps';
 
   useEffect(() => {
-    document.body.className = 'portfolio-page';
+    document.body.className = 'portfolio-page tm-title';
     document.title = 'Molly Chen · Octave Product Portfolio';
     return () => {
       document.body.className = '';
@@ -132,7 +132,7 @@ export default function PortfolioPage() {
   return (
     <>
       <Header />
-      <Navbar />
+      <Navbar /><br/>
       {sections.map((section) => (
         <Section key={section.id} section={section} isActive={section.tabId === activeTab} />
       ))}
