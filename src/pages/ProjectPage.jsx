@@ -94,7 +94,7 @@ export default function ProjectPage() {
                   {status === 'error' && <p>{message}</p>}
                   {status === 'loaded' && card && (
                     <>
-                      <Link to={`/portfolio?tab=${section.tabId}`} className="project-back-link">
+                      <Link to={`/portfolio?tab=${section.tabId}`} className="project-back-link lazydog">
                         ← Portfolio
                       </Link>
                       <div className="project-status-row">
@@ -163,8 +163,8 @@ export default function ProjectPage() {
                                 src={embedSrc}
                                 title={`${card.title} prototype`}
                                 {...(!isYouTube && { sandbox: 'allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation' })}
+                                {...(!isYouTube && { referrerPolicy: 'no-referrer' })}
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="no-referrer"
                                 allowFullScreen
                               />
                             </div>

@@ -174,13 +174,6 @@ body.portfolio-page nav.site-nav .site-nav-inner {
 	overflow: visible;
 }
 
-/* Header overrides (portfolio page only) */
-body.portfolio-page header {
-	padding-top: 80px;
-	padding-bottom: 60px;
-	min-height: auto;
-}
-
 body.portfolio-page .profile-photo {
 	width: 200px;
 	height: 200px;
@@ -752,7 +745,7 @@ body.project-page .project-preview {
 
 .project-prototype-frame {
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	border-radius: 12px;
 	overflow: hidden;
 	border: 1px solid #e0e8f0;
