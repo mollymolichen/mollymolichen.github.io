@@ -1,5 +1,21 @@
+@font-face {
+	font-family: 'LazyDog';
+	src: url('../fonts/Lazydog.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	scroll-behavior: smooth;
+}
+
+h1, h2, h3, .lazydog {
+	font-family: 'LazyDog', 'Nunito', sans-serif;
+}
+
+h1 {
+	color: #D9FF66;
+	margin-bottom: 4px;
 }
 
 .top-nav-stack {
@@ -94,7 +110,7 @@ html {
 }
 
 #experiences,
-#skills {
+#education {
 	scroll-margin-top: 3.5rem;
 }
 
@@ -118,24 +134,30 @@ a:hover {
     border-radius: 20px;
 }
 
-/* index.html: About Me and Skills sections — white bg, black text */
+/* index.html: About Me and education sections — white bg, black text */
 body:not(.portfolio-page) .about,
-body:not(.portfolio-page) .languages {
+body:not(.portfolio-page) .skills {
 	background: #fff;
 	color: #000;
 	box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.08);
+	margin-top: 30px;
 }
 
-body:not(.portfolio-page) .about h2 {
+body:not(.portfolio-page) .skills strong {
+	display: inline;
+	font-weight: bold;
+}
+
+body:not(.portfolio-page) .skills li {
+	padding-bottom: 6px;
+}
+
+body:not(.portfolio-page) .about .skills h2 {
 	color: #60A9F0;
 }
 
-body:not(.portfolio-page) .languages h2 {
-	color: #000;
-}
-
 body:not(.portfolio-page) .about a,
-body:not(.portfolio-page) .languages a {
+body:not(.portfolio-page) .skills a {
 	color: #000;
 }
 
@@ -150,14 +172,6 @@ body.portfolio-page nav.site-nav .site-nav-inner {
 	background: transparent;
 	border-bottom: none;
 	overflow: visible;
-}
-
-/* Header overrides (portfolio page only) */
-body.portfolio-page header {
-	/* background: linear-gradient(135deg, #0d1b3e 0%, #1a2e5e 50%, #0d1b3e 100%); */
-	padding-top: 80px;
-	padding-bottom: 60px;
-	min-height: auto;
 }
 
 body.portfolio-page .profile-photo {
@@ -175,11 +189,6 @@ body.portfolio-page .profile-photo {
 	border: 4px solid rgba(217, 255, 102, 0.4);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 	line-height: 1;
-}
-
-body.portfolio-page header h1 {
-	color: #fff;
-	margin-bottom: 4px;
 }
 
 body.portfolio-page header .header-sub {
@@ -229,7 +238,7 @@ body.portfolio-page header .header-sub {
 }
 
 .portfolio-section .experience,
-.portfolio-section .skills,
+.portfolio-section .education,
 .portfolio-section .about {
 	margin-top: 0;
 }
@@ -330,7 +339,7 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 
 /* Cards inside blue sections */
 .experience .prd-card,
-.skills .prd-card {
+.education .prd-card {
 	background: rgba(255, 255, 255, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.15);
 	border-radius: 8px;
@@ -340,13 +349,13 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 }
 
 .experience .prd-card:hover,
-.skills .prd-card:hover {
+.education .prd-card:hover {
 	background: rgba(255, 255, 255, 0.16);
 }
 
 /* Cards inside white sections */
 .about .prd-card,
-.languages .prd-card,
+.skills .prd-card,
 .contact .prd-card {
 	border: 1px solid #e8ecf5;
 	border-radius: 8px;
@@ -357,7 +366,7 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 }
 
 .about .prd-card:hover,
-.languages .prd-card:hover,
+.skills .prd-card:hover,
 .contact .prd-card:hover {
 	box-shadow: 0 4px 18px rgba(51, 102, 204, 0.12);
 }
@@ -378,12 +387,12 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 }
 
 .experience .prd-card-title,
-.skills .prd-card-title {
+.education .prd-card-title {
 	color: #D9FF66;
 }
 
 .about .prd-card-title,
-.languages .prd-card-title,
+.skills .prd-card-title,
 .contact .prd-card-title {
 	color: #1a2e5e;
 }
@@ -402,12 +411,12 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 }
 
 .experience .period-text,
-.skills .period-text {
+.education .period-text {
 	color: #d0e4ff;
 }
 
 .about .period-text,
-.languages .period-text,
+.skills .period-text,
 .contact .period-text {
 	color: #6b7da0;
 }
@@ -427,7 +436,7 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 
 /* White section status pills */
 .about,
-.languages,
+.skills,
 .contact {
 	background: #eafff0;
 	color: #1a8c42;
@@ -441,7 +450,7 @@ body.portfolio-page #tab-business-integrations .status-pill {
 }
 
 .about .status-notstarted,
-.languages .status-notstarted,
+.skills .status-notstarted,
 .contact .status-notstarted {
 	background: #fff8e1;
 	color: #9c6d00;
@@ -449,7 +458,7 @@ body.portfolio-page #tab-business-integrations .status-pill {
 }
 
 .about .status-notapproved,
-.languages .status-notapproved,
+.skills .status-notapproved,
 .contact .status-notapproved {
 	background: #fff0f0;
 	color: #c0392b;
@@ -487,12 +496,12 @@ body.portfolio-page #tab-business-integrations .status-pill {
 }
 
 .experience .prd-field-label,
-.skills .prd-field-label {
+.education .prd-field-label {
 	color: #a8c4f0;
 }
 
 .about .prd-field-label,
-.languages .prd-field-label,
+.skills .prd-field-label,
 .contact .prd-field-label {
 	color: #3366CC;
 }
@@ -503,12 +512,12 @@ body.portfolio-page #tab-business-integrations .status-pill {
 }
 
 .experience .prd-field-value,
-.skills .prd-field-value {
+.education .prd-field-value {
 	color: #e8f0ff;
 }
 
 .about .prd-field-value,
-.languages .prd-field-value,
+.skills .prd-field-value,
 .contact .prd-field-value {
 	color: #2c3a5c;
 }
@@ -529,12 +538,12 @@ body.portfolio-page #tab-business-integrations .status-pill {
 }
 
 .experience .section-header h2,
-.skills .section-header h2 {
+.education .section-header h2 {
 	color: #fff;
 }
 
 .about .section-header h2,
-.languages .section-header h2,
+.skills .section-header h2,
 .contact .section-header h2 {
 	color: #1a2e5e;
 }
@@ -547,13 +556,13 @@ body.portfolio-page #tab-business-integrations .status-pill {
 }
 
 .experience .section-count,
-.skills .section-count {
+.education .section-count {
 	background: rgba(255, 255, 255, 0.15);
 	color: #D9FF66;
 }
 
 .about .section-count,
-.languages .section-count,
+.skills .section-count,
 .contact .section-count {
 	background: #e8efff;
 	color: #3366CC;
@@ -736,7 +745,7 @@ body.project-page .project-preview {
 
 .project-prototype-frame {
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	border-radius: 12px;
 	overflow: hidden;
 	border: 1px solid #e0e8f0;

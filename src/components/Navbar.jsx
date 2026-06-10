@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const location = useLocation();
-  const isIndex = location.pathname === '/';
   const wrapRef = useRef(null);
 
   useEffect(() => {
@@ -31,16 +29,12 @@ export default function Navbar() {
               <div className="site-nav-inner round">
                 <ul className="site-nav-list">
                   <li>
-                    {isIndex ? (
-                      <a href="#experiences">Experiences</a>
-                    ) : (
-                      <Link to="/" state={{ scrollTo: 'experiences' }}>Experiences</Link>
-                    )}
+                    <Link to="/" state={{ scrollTo: 'experiences' }} class="lazydog">Experience</Link>
                   </li>
-                  <li className={`site-nav-dropdown-wrap${open ? ' is-open' : ''}`} ref={wrapRef}>
+                  <li className={`site-nav-dropdown-wrap${open ? ' is-open' : ''}`} ref={wrapRef} class="lazydog">
                     <a
                       href="#"
-                      className="site-nav-dropdown-trigger"
+                      className="site-nav-dropdown-trigger lazydog"
                       id="portfolioMenuTrigger"
                       aria-expanded={String(open)}
                       aria-haspopup="true"
@@ -68,11 +62,7 @@ export default function Navbar() {
                     </ul>
                   </li>
                   <li>
-                    {isIndex ? (
-                      <a href="#skills">Skills</a>
-                    ) : (
-                      <Link to="/" state={{ scrollTo: 'skills' }}>Skills</Link>
-                    )}
+                    <Link to="/" state={{ scrollTo: 'skills' }} class="lazydog">Skills</Link>
                   </li>
                 </ul>
               </div>
