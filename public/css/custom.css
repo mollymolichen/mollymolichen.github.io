@@ -316,10 +316,19 @@ body.portfolio-page .business-integrations-grid .prd-card-body {
 }
 
 body.portfolio-page #tab-consumer-apps .section-header,
-body.portfolio-page #tab-business-integrations .section-header {
+body.portfolio-page #tab-business-integrations .section-header,
+body.portfolio-page #tab-consumer-apps .section-subtitle,
+body.portfolio-page #tab-business-integrations .section-subtitle {
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px 0px 10px 0px;
+}
+
+body.portfolio-page #tab-consumer-apps .prd-card-top > div:first-child,
+body.portfolio-page #tab-business-integrations .prd-card-top > div:first-child {
+	flex: 1;
+	text-align: left;
 }
 
 body.portfolio-page #tab-consumer-apps .prd-card-title,
@@ -384,6 +393,7 @@ body.portfolio-page #tab-business-integrations .prd-card-body > div {
 .prd-card-title {
 	font-size: 16px;
 	font-weight: 700;
+	text-align: left;
 }
 
 .experience .prd-card-title,
@@ -527,7 +537,21 @@ body.portfolio-page #tab-business-integrations .status-pill {
 	display: flex;
 	align-items: center;
 	gap: 14px;
-	margin-bottom: 28px;
+	margin-bottom: 12px;
+}
+
+.section-subtitle {
+	font-size: 15px;
+	margin-bottom: 24px;
+	max-width: 720px;
+}
+
+.experience .section-subtitle {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.about .section-subtitle {
+	color: #4a5568;
 }
 
 .section-header h2 {
@@ -639,12 +663,21 @@ body.project-page section.about.project-detail-section {
 body.project-page section.about.project-detail-section > .container {
 	background: #fff;
 	color: #2c3a5c;
-	padding-top: 36px;
-	padding-bottom: 36px;
+	padding: 36px;
 	border-radius: 20px;
 	box-shadow: 0 1px 5px rgba(50, 50, 50, 0.08);
 	margin-top: 12px;
 	margin-bottom: 12px;
+}
+
+body.project-page section.about.project-detail-section .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body.project-page section.about.project-detail-section .col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 body.project-page .status-pill {
