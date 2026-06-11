@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
 import ProjectPage from './pages/ProjectPage.jsx';
@@ -52,10 +52,22 @@ function BackgroundSlideshow() {
   );
 }
 
+function RouteTracker() {
+  const location = useLocation();
+  useEffect(() => {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', 'page_view', {
+      page_path: location.pathname + location.search,
+    });
+  }, [location]);
+  return null;
+}
+
 export default function App() {
   return (
     <HashRouter>
       <BackgroundSlideshow />
+      <RouteTracker />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />

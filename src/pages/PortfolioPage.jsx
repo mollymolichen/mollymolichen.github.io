@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../components/Header.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
@@ -30,13 +30,18 @@ function FieldBlock({ label, iconClass, html }) {
 }
 
 function Card({ card }) {
+  const navigate = useNavigate();
+  const slug = slugify(card.title);
+
   return (
-    <div className="prd-card">
+    <div
+      className="prd-card"
+      onClick={() => navigate(`/project/${slug}`)}
+      style={{ cursor: 'pointer' }}
+    >
       <div className="prd-card-top">
         <div>
-          <Link className="prd-card-title" to={`/project/${slugify(card.title)}`}>
-            {card.title}
-          </Link>
+          <span className="prd-card-title">{card.title}</span>
         </div>
         <div className="prd-card-meta">
           <span className="period-text"></span>
@@ -57,6 +62,7 @@ function Card({ card }) {
             target="_blank"
             rel="noopener noreferrer"
             className="prd-card-preview-cta"
+            onClick={(e) => e.stopPropagation()}
           >
             View Live →
           </a>
@@ -97,6 +103,9 @@ function Section({ section, isActive }) {
                 </h2>
                 <span className="section-count">{countText}</span>
               </div>
+              {section.subtitle && (
+                <p className="section-subtitle">{section.subtitle}</p>
+              )}
               <div className={gridClass}>
                 {(section.cards || []).map((card) => (
                   <Card key={card.title} card={card} />
