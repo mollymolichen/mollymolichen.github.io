@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 820" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .frame { fill: #fdf8ec; stroke: #e3d9c2; stroke-width: 2; }
+      .card { fill: #fffdf6; stroke: #ece3cd; stroke-width: 1.5; }
+      .pill { fill: #faf3d9; stroke: #e6dcbd; stroke-width: 1.5; }
+      .pill-sel { fill: #fffdf6; stroke: #3b2f1e; stroke-width: 2.5; }
+      .btn { fill: #6b3a1f; }
+      .btn-sec { fill: #fffdf6; stroke: #6b3a1f; stroke-width: 1.5; }
+      .field { fill: #fffdf6; stroke: #e0d5ba; stroke-width: 1.5; }
+      .h1 { font-size: 19px; fill: #5a4a1e; font-weight: bold; }
+      .h2 { font-size: 15px; fill: #3b2f1e; font-weight: bold; }
+      .body { font-size: 12px; fill: #4d3f2a; }
+      .small { font-size: 10.5px; fill: #8a7c5e; }
+      .pilltxt { font-size: 12px; fill: #3b2f1e; }
+      .btntxt { font-size: 14px; fill: #ffffff; font-weight: bold; }
+      .label { font-size: 10px; fill: #9a8c68; letter-spacing: .5px; }
+      .anno { font-size: 11px; fill: #b3a888; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- ================= SCREEN 1 : AVAILABILITY ================= -->
+  <text x="40" y="36" class="anno">1. Availability</text>
+  <rect x="40" y="50" width="480" height="730" rx="16" class="frame"/>
+  <text x="280" y="92" text-anchor="middle" class="h1">Meet with Jordan Sample</text>
+
+  <rect x="70" y="112" width="420" height="560" rx="12" class="card"/>
+  <text x="92" y="146" class="h2">Jordan's availability</text>
+  <text x="92" y="166" class="small">All times are listed in Pacific Time.</text>
+
+  <!-- date column headers -->
+  <text x="120" y="200" class="label">&#8249;</text>
+  <text x="190" y="200" text-anchor="middle" class="label">WED</text>
+  <text x="190" y="216" text-anchor="middle" class="body">Sep 4</text>
+  <text x="300" y="200" text-anchor="middle" class="label">FRI</text>
+  <text x="300" y="216" text-anchor="middle" class="body">Sep 6</text>
+  <text x="410" y="200" text-anchor="middle" class="label">MON</text>
+  <text x="410" y="216" text-anchor="middle" class="body">Sep 9</text>
+  <text x="455" y="200" class="label">&#8250;</text>
+
+  <!-- slots col 1 -->
+  <rect x="140" y="232" width="100" height="36" rx="18" class="pill-sel"/>
+  <text x="190" y="255" text-anchor="middle" class="pilltxt" font-weight="bold">2:00pm</text>
+  <rect x="140" y="280" width="100" height="36" rx="18" class="pill"/>
+  <text x="190" y="303" text-anchor="middle" class="pilltxt">3:00pm</text>
+  <!-- slots col 2 -->
+  <rect x="250" y="232" width="100" height="36" rx="18" class="pill"/>
+  <text x="300" y="255" text-anchor="middle" class="pilltxt">2:00pm</text>
+  <rect x="250" y="280" width="100" height="36" rx="18" class="pill"/>
+  <text x="300" y="303" text-anchor="middle" class="pilltxt">3:00pm</text>
+  <!-- slots col 3 -->
+  <rect x="360" y="232" width="100" height="36" rx="18" class="pill"/>
+  <text x="410" y="255" text-anchor="middle" class="pilltxt">1:00pm</text>
+  <rect x="360" y="280" width="100" height="36" rx="18" class="pill"/>
+  <text x="410" y="303" text-anchor="middle" class="pilltxt">2:00pm</text>
+  <rect x="360" y="328" width="100" height="36" rx="18" class="pill"/>
+  <text x="410" y="351" text-anchor="middle" class="pilltxt">3:00pm</text>
+
+  <!-- location radios -->
+  <circle cx="106" cy="412" r="8" fill="#fffdf6" stroke="#d8cdb0" stroke-width="1.5"/>
+  <text x="124" y="416" class="body">Virtually &#160;&#9634;</text>
+  <text x="124" y="433" class="small">Meet Jordan over video</text>
+
+  <circle cx="106" cy="470" r="9" fill="#f2c84b"/>
+  <path d="M101 470 l4 4 7 -8" stroke="#3b2f1e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="124" y="474" class="body">In-person (after first session)</text>
+  <text x="124" y="491" class="small">123 Example St, Suite 400, Sample City, ST 00000</text>
+  <text x="124" y="506" class="small">or Northside Sample Clinic</text>
+
+  <line x1="92" y1="540" x2="468" y2="540" stroke="#e8dfc8" stroke-width="1.5"/>
+
+  <!-- CTA -->
+  <rect x="92" y="600" width="376" height="48" rx="24" class="btn"/>
+  <text x="280" y="630" text-anchor="middle" class="btntxt">Book With Jordan</text>
+
+  <!-- flow arrow -->
+  <line x1="540" y1="415" x2="580" y2="415" stroke="#bbbbbb" stroke-width="2"/>
+  <path d="M580 415 l-10 -6 v12 z" fill="#bbbbbb"/>
+
+  <!-- ================= SCREEN 2 : CONFIRM ================= -->
+  <text x="600" y="36" class="anno">2. Confirm details</text>
+  <rect x="600" y="50" width="480" height="730" rx="16" class="frame"/>
+  <text x="630" y="94" class="body" font-size="18">&#8592;</text>
+  <text x="840" y="92" text-anchor="middle" class="h1">Confirm your session</text>
+
+  <!-- summary card -->
+  <rect x="630" y="115" width="420" height="130" rx="12" class="card"/>
+  <circle cx="668" cy="155" r="20" fill="#ecdfbd"/>
+  <text x="700" y="150" class="h2">Jordan Sample</text>
+  <text x="700" y="170" class="body">Wed, Sep 4 &#183; 2:00pm PT &#183; 50 min</text>
+  <text x="700" y="190" class="body">In-person</text>
+  <text x="700" y="208" class="small">123 Example St, Suite 400, Sample City, ST 00000</text>
+  <text x="980" y="150" class="small" text-decoration="underline">Edit</text>
+
+  <!-- form -->
+  <text x="630" y="288" class="label">FULL NAME</text>
+  <rect x="630" y="298" width="420" height="44" rx="8" class="field"/>
+  <text x="646" y="325" class="body">Taylor Doe</text>
+
+  <text x="630" y="372" class="label">EMAIL</text>
+  <rect x="630" y="382" width="420" height="44" rx="8" class="field"/>
+  <text x="646" y="409" class="body">taylor.doe@example.com</text>
+
+  <text x="630" y="456" class="label">PHONE (OPTIONAL)</text>
+  <rect x="630" y="466" width="420" height="44" rx="8" class="field"/>
+  <text x="646" y="493" class="body">(555) 010-0123</text>
+
+  <!-- checkbox -->
+  <rect x="630" y="540" width="16" height="16" rx="3" class="field"/>
+  <path d="M633 548 l4 5 7 -9" stroke="#6b3a1f" stroke-width="2" fill="none"/>
+  <text x="656" y="553" class="small">I agree to the cancellation policy (placeholder text)</text>
+
+  <!-- CTA -->
+  <rect x="652" y="600" width="376" height="48" rx="24" class="btn"/>
+  <text x="840" y="630" text-anchor="middle" class="btntxt">Confirm Booking</text>
+
+  <!-- flow arrow -->
+  <line x1="1100" y1="415" x2="1140" y2="415" stroke="#bbbbbb" stroke-width="2"/>
+  <path d="M1140 415 l-10 -6 v12 z" fill="#bbbbbb"/>
+
+  <!-- ================= SCREEN 3 : SUCCESS ================= -->
+  <text x="1160" y="36" class="anno">3. Confirmation</text>
+  <rect x="1160" y="50" width="480" height="730" rx="16" class="frame"/>
+
+  <circle cx="1400" cy="160" r="36" fill="#f2c84b"/>
+  <path d="M1383 161 l11 12 22 -26" stroke="#3b2f1e" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="1400" y="236" text-anchor="middle" class="h1">You're booked!</text>
+  <text x="1400" y="262" text-anchor="middle" class="small">A confirmation email is on its way to taylor.doe@example.com</text>
+
+  <!-- details card -->
+  <rect x="1190" y="290" width="420" height="170" rx="12" class="card"/>
+  <text x="1212" y="322" class="label">SESSION WITH</text>
+  <text x="1212" y="342" class="body">Jordan Sample</text>
+  <text x="1212" y="374" class="label">WHEN</text>
+  <text x="1212" y="394" class="body">Wednesday, Sep 4 &#183; 2:00pm Pacific Time</text>
+  <text x="1212" y="426" class="label">WHERE</text>
+  <text x="1212" y="446" class="body">123 Example St, Suite 400, Sample City, ST 00000</text>
+
+  <!-- buttons -->
+  <rect x="1212" y="500" width="376" height="48" rx="24" class="btn"/>
+  <text x="1400" y="530" text-anchor="middle" class="btntxt">Add to Calendar</text>
+  <rect x="1212" y="562" width="376" height="48" rx="24" class="btn-sec"/>
+  <text x="1400" y="592" text-anchor="middle" class="pilltxt">Manage or reschedule</text>
+
+  <text x="1400" y="650" text-anchor="middle" class="small" text-decoration="underline">Back to home</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 884" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .frame { fill: #fdf8ec; stroke: #e3d9c2; stroke-width: 2; }
+      .card { fill: #f8ece1; stroke: #eddcc9; stroke-width: 1.5; }
+      .h1 { font-size: 24px; fill: #2f2a20; font-weight: bold; }
+      .h2 { font-size: 17px; fill: #2f2a20; font-weight: bold; }
+      .section { font-size: 13px; fill: #8a7c5e; }
+      .body { font-size: 12px; fill: #4d3f2a; }
+      .small { font-size: 10.5px; fill: #8a7c5e; }
+      .edit { font-size: 11.5px; fill: #4d3f2a; text-decoration: underline; font-weight: bold; }
+      .pill-g { fill: #d9efce; }
+      .pill-g-txt { font-size: 10px; fill: #3a6b2f; font-weight: bold; }
+      .pill-r { fill: #f6d4cd; }
+      .pill-r-txt { font-size: 10px; fill: #b5483a; font-weight: bold; }
+      .icon { fill: none; stroke: #6b5c40; stroke-width: 1.4; }
+      .divider { stroke: #e8dfc8; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="10" y="10" width="760" height="864" rx="4" class="frame"/>
+  <text x="70" y="64" class="h1">Profile</text>
+
+  <!-- ===== Profile info section ===== -->
+  <text x="70" y="106" class="section">Profile info</text>
+  <text x="690" y="106" text-anchor="end" class="edit">Edit</text>
+  <line x1="70" y1="116" x2="710" y2="116" class="divider"/>
+
+  <rect x="70" y="130" width="640" height="264" rx="14" class="card"/>
+
+  <!-- avatar placeholder -->
+  <rect x="96" y="152" width="84" height="84" rx="10" fill="#e7d3bd"/>
+  <circle cx="138" cy="184" r="14" fill="#f8ece1"/>
+  <path d="M114 236 q24 -26 48 0" fill="#f8ece1"/>
+
+  <text x="200" y="186" class="h2">Jordan</text>
+  <text x="200" y="208" class="h2">Sample</text>
+
+  <!-- contact rows with lo-fi icons -->
+  <rect x="98" y="262" width="13" height="9" rx="1.5" class="icon"/>
+  <path d="M98 263 l6.5 5 6.5 -5" class="icon"/>
+  <text x="124" y="271" class="body">jordan.sample@example.com</text>
+
+  <path d="M99 290 q-2 6 4 9 q6 3 9 -2" class="icon"/>
+  <text x="124" y="298" class="body">(555) 010-0123</text>
+
+  <circle cx="105" cy="320" r="6.5" class="icon"/>
+  <path d="M105 316 v4 l3 2" class="icon"/>
+  <text x="124" y="324" class="body">Eastern Standard Time (EST)</text>
+
+  <path d="M99 350 l6 -6 6 6 v6 h-12 z" class="icon"/>
+  <text x="124" y="352" class="body">123 Example St, Sample City, ST 00000</text>
+  <text x="124" y="368" class="small">Suite 201 on 2nd floor. Placeholder access note.</text>
+
+  <!-- ===== Practicing states section ===== -->
+  <g transform="translate(0,24)">
+  <text x="70" y="416" class="section">Practicing states</text>
+  <text x="690" y="416" text-anchor="end" class="edit">Edit</text>
+  <line x1="70" y1="426" x2="710" y2="426" class="divider"/>
+
+  <!-- State card: California -->
+  <rect x="70" y="440" width="310" height="180" rx="14" class="card"/>
+  <text x="94" y="474" class="h2">California</text>
+  <rect x="196" y="458" width="154" height="22" rx="11" class="pill-g"/>
+  <text x="273" y="473" text-anchor="middle" class="pill-g-txt">Accepting new clients</text>
+
+  <circle cx="100" cy="500" r="4" class="icon"/><circle cx="109" cy="500" r="4" class="icon"/>
+  <text x="124" y="504" class="body">Clients: 12</text>
+  <rect x="95" y="522" width="13" height="9" rx="2" class="icon"/><path d="M108 524 l5 -2 v7 l-5 -2" class="icon"/>
+  <text x="124" y="531" class="body">Virtual only</text>
+  <path d="M101 546 l6 -2 6 2 v6 q0 5 -6 7 q-6 -2 -6 -7 z" class="icon"/>
+  <text x="124" y="556" class="body">Sample Insurer A, Insurer B,</text>
+  <text x="124" y="571" class="body">Insurer C, Insurer D</text>
+  <rect x="95" y="586" width="13" height="10" rx="2" class="icon"/><line x1="98" y1="591" x2="105" y2="591" class="icon"/>
+  <text x="124" y="596" class="body">License: #0000000000</text>
+
+  <!-- State card: Florida -->
+  <rect x="400" y="440" width="310" height="180" rx="14" class="card"/>
+  <text x="424" y="474" class="h2">Florida</text>
+  <rect x="496" y="458" width="184" height="22" rx="11" class="pill-r"/>
+  <text x="588" y="473" text-anchor="middle" class="pill-r-txt">Not accepting new clients</text>
+
+  <circle cx="430" cy="500" r="4" class="icon"/><circle cx="439" cy="500" r="4" class="icon"/>
+  <text x="454" y="504" class="body">Clients: 7</text>
+  <rect x="425" y="522" width="13" height="9" rx="2" class="icon"/><path d="M438 524 l5 -2 v7 l-5 -2" class="icon"/>
+  <text x="454" y="531" class="body">Virtual only</text>
+  <path d="M431 546 l6 -2 6 2 v6 q0 5 -6 7 q-6 -2 -6 -7 z" class="icon"/>
+  <text x="454" y="556" class="body">Sample Insurer E</text>
+  <rect x="425" y="570" width="13" height="10" rx="2" class="icon"/><line x1="428" y1="575" x2="435" y2="575" class="icon"/>
+  <text x="454" y="580" class="body">License: #0000000000</text>
+
+  <!-- State card: New Jersey -->
+  <rect x="70" y="640" width="310" height="180" rx="14" class="card"/>
+  <text x="94" y="674" class="h2">New Jersey</text>
+  <rect x="208" y="658" width="154" height="22" rx="11" class="pill-g"/>
+  <text x="285" y="673" text-anchor="middle" class="pill-g-txt">Accepting new clients</text>
+
+  <circle cx="100" cy="700" r="4" class="icon"/><circle cx="109" cy="700" r="4" class="icon"/>
+  <text x="124" y="704" class="body">Clients: 9</text>
+  <rect x="95" y="722" width="13" height="9" rx="2" class="icon"/><path d="M108 724 l5 -2 v7 l-5 -2" class="icon"/>
+  <text x="124" y="731" class="body">In-person and virtual</text>
+  <path d="M101 746 l6 -2 6 2 v6 q0 5 -6 7 q-6 -2 -6 -7 z" class="icon"/>
+  <text x="124" y="756" class="body">Sample Insurer B, Insurer C, Insurer D</text>
+  <rect x="95" y="770" width="13" height="10" rx="2" class="icon"/><line x1="98" y1="775" x2="105" y2="775" class="icon"/>
+  <text x="124" y="780" class="body">License: #0000000000</text>
+  </g>
+</svg>

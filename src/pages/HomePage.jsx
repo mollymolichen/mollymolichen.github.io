@@ -28,8 +28,8 @@ export default function HomePage() {
       <Navbar />
 
       <section className="container">
-        <div className="row">
-          <div className="col-md-5 col-sm-12">
+        <div className="row row-equal">
+          <div className="col-md-7 col-sm-12">
             <div className="about round">
               <h2 className="accent">About Me</h2><br />
               {data.about.paragraphs.map((p, i) => (
@@ -37,7 +37,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="col-md-7 col-sm-12">
+          <div className="col-md-5 col-sm-12">
             <div className="education round">
               <h2 className="white">Education</h2>
               <div className="education-content">
@@ -94,6 +94,19 @@ export default function HomePage() {
                 {data.skills.map((skill) => (
                   <li key={skill.label}>
                     <strong>{skill.label}: </strong>{skill.items}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-12">
+            <div className="skills round" id="contact">
+              <h2 className="accent">Contact</h2>
+              <p>{data.contact.intro}</p>
+              <ul>
+                {data.contact.links.map((link) => (
+                  <li key={link.label}>
+                    <strong>{link.label}: </strong><a href={link.href} target="_blank"><i className={link.icon}></i></a>
                   </li>
                 ))}
               </ul>

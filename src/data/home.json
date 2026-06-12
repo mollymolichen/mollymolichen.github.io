@@ -1,12 +1,13 @@
 {
   "header": [
-    { "name": "Molly Chen", "title": "Technical Product Manager" }
+    { "name": "Molly Chen", "title": "Product Engineer" }
   ],
   "about": {
     "paragraphs": [
       "Hello there!",
-      "I'm an ex-Microsoftie now working as a product manager at <a href=\"https://www.findoctave.com/\" target=\"_blank\" style=\"color: #60a9f0\">Octave</a>, building tools for therapists to deliver premium, effective, and accessible mental healthcare.",
-      "I'm an engineer at heart and a product manager by experience. My overarching career goal is to leverage technology to help others live their best lives."
+      "I'm an ex-Microsoftie working in the healthcare space, building tools for therapists to deliver premium, effective, and accessible mental healthcare.",
+      "I'm an engineer at heart and a product manager by experience. <strong>I'm looking for product engineering positions at small-to-mid-sized companies.</strong>",
+      "My overarching career goal is to leverage technology to help others live their best lives."
     ]
   },
   "education": [
@@ -64,6 +65,17 @@
       ]
     }
   ],
+  "contact": 
+  {                                                                                                                                                            
+    "intro": "Want to get in touch? Find me here:",                                                                                                                       
+    "links": [             
+      { "label": "Phone", "href": "tel:8322825093", "icon": "fa fa-phone" },
+      { "label": "Email", "href": "mailto:mollymchen@gmail.com", "icon": "fa fa-envelope" },                                                                                                                                              
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/mollymolichen/", "icon": "fa fa-linkedin" },                                                            
+      { "label": "GitHub", "href": "https://github.com/mollymolichen", "icon": "fa fa-github" },                                                                          
+      { "label": "Resume", "href": "/images/resume.pdf", "icon": "fa fa-file" }                                                                                           
+    ]                                                                                                                                                                     
+  },   
   "skills": [
     { "label": "AI Tools", "items": "Claude Code, Cursor, Figma Make, Agentic AI, RPA, CRM, Tellescope, Tray.ai, Felicity AI" },
     { "label": "Languages", "items": "Python, C#, Java, TypeScript, PowerShell, Bash" },

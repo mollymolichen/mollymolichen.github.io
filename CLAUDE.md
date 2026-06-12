@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Personal portfolio site for Molly Chen. Built with Vite + React, deployed on GitHub Pages. The `reactMigration` branch holds the current React codebase; `master` holds the previous static HTML version.
+Personal portfolio site for Molly Chen. Built with Vite + React, deployed on GitHub Pages. `master` holds the current React codebase; feature work happens on branches merged via PR.
 
 ## Running locally
 
@@ -16,10 +16,10 @@ npm run dev
 ## Building for deployment
 
 ```bash
-npm run build   # outputs to docs/
+npm run build   # outputs to dist/
 ```
 
-Configure GitHub Pages to serve from the `docs/` folder on the branch you want to deploy.
+Deployment is automated: pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and publishes `dist/` to GitHub Pages via the Pages artifact flow. Build output is never committed — `dist/` and `docs/` are gitignored intentionally.
 
 ## Architecture
 

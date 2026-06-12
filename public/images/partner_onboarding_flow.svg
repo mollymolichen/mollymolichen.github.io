@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1690" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .frame { fill: #fdf8ec; stroke: #e3d9c2; stroke-width: 2; }
+      .sidebar { fill: #f6efdd; stroke: #e3d9c2; stroke-width: 1.5; }
+      .nav-active { fill: #6b3a1f; }
+      .card { fill: #fffdf6; stroke: #ece3cd; stroke-width: 1.5; }
+      .card-done { fill: #f6efdd; stroke: #e6dcbd; stroke-width: 1.5; }
+      .field { fill: #fffdf6; stroke: #d8cdb0; stroke-width: 1.5; }
+      .field-focus { fill: #fdf3d2; stroke: #6b3a1f; stroke-width: 2; }
+      .choice { fill: #fffdf6; stroke: #d8cdb0; stroke-width: 1.5; }
+      .choice-sel { fill: #fdf3d2; stroke: #6b3a1f; stroke-width: 2.5; }
+      .btn { fill: #6b3a1f; }
+      .h1 { font-size: 30px; fill: #5a4a1e; font-weight: bold; }
+      .h2 { font-size: 15px; fill: #3b2f1e; font-weight: bold; }
+      .h2lg { font-size: 17px; fill: #3b2f1e; font-weight: bold; }
+      .q { font-size: 14px; fill: #3b2f1e; font-weight: bold; }
+      .body { font-size: 12.5px; fill: #4d3f2a; }
+      .small { font-size: 11px; fill: #8a7c5e; }
+      .flabel { font-size: 9px; fill: #9a8c68; }
+      .link { font-size: 12.5px; fill: #6b3a1f; font-weight: bold; text-decoration: underline; }
+      .btntxt { font-size: 12.5px; fill: #ffffff; font-weight: bold; }
+      .navtxt { font-size: 12.5px; fill: #ffffff; font-weight: bold; }
+      .logo { font-size: 16px; fill: #5a4a1e; font-weight: bold; letter-spacing: 1px; }
+      .choicetxt { font-size: 12.5px; fill: #6b3a1f; font-weight: bold; }
+      .done-label { font-size: 10px; fill: #3a6b2f; font-weight: bold; }
+      .lock-label { font-size: 10px; fill: #9a8c68; font-weight: bold; }
+      .bar-bg { fill: #ece3cd; }
+      .bar-fill { fill: #f2c84b; }
+      .anno { font-size: 13px; fill: #b3a888; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- ================= FRAME 1 : ONBOARDING CHECKLIST ================= -->
+  <text x="10" y="28" class="anno">1. Onboarding checklist</text>
+  <g transform="translate(0,30)">
+    <rect x="10" y="10" width="1220" height="770" rx="4" class="frame"/>
+
+    <path d="M10 14 h200 v762 h-200 a4 4 0 0 1 -4 -4 v-754 a4 4 0 0 1 4 -4 z" class="sidebar"/>
+    <text x="34" y="52" class="logo">PARTNER HUB</text>
+    <text x="34" y="72" class="small">Therapist Portal</text>
+    <line x1="34" y1="96" x2="186" y2="96" stroke="#e0d5ba" stroke-width="1.5"/>
+    <rect x="26" y="118" width="168" height="36" rx="8" class="nav-active"/>
+    <rect x="42" y="128" width="12" height="14" rx="2" fill="none" stroke="#ffffff" stroke-width="1.4"/>
+    <path d="M45 135 l3 3 5 -6" stroke="#ffffff" stroke-width="1.4" fill="none"/>
+    <text x="64" y="141" class="navtxt">Setup</text>
+
+    <text x="500" y="68" class="h1">Welcome!</text>
+    <text x="500" y="104" class="body">Thanks for creating your account. Your next step is to complete the setup checklist below.</text>
+    <text x="500" y="132" class="body">Have questions along the way? Check out our <tspan class="link">FAQs</tspan>, or reach us anytime at <tspan class="link">hello@example.com</tspan>.</text>
+    <text x="500" y="160" class="body">Want to talk to a specialist? Sign up for a group info session <tspan class="link">here</tspan>, or schedule a 15-minute</text>
+    <text x="500" y="178" class="body">consultation <tspan class="link">here</tspan>.</text>
+
+    <rect x="500" y="204" width="616" height="8" rx="4" class="bar-bg"/>
+    <rect x="500" y="204" width="205" height="8" rx="4" class="bar-fill"/>
+    <text x="1116" y="230" text-anchor="end" class="small">1 of 3 tasks completed</text>
+
+    <rect x="500" y="248" width="616" height="84" rx="10" class="card-done"/>
+    <circle cx="534" cy="290" r="13" fill="#f2c84b"/>
+    <path d="M527 290 l5 5 9 -10" stroke="#3b2f1e" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="562" y="282" class="h2">Eligibility Questionnaire</text>
+    <text x="562" y="302" class="small">Placeholder description: a few questions to verify eligibility. Takes ~5 minutes.</text>
+    <rect x="1006" y="272" width="86" height="22" rx="11" fill="#d9efce"/>
+    <text x="1049" y="287" text-anchor="middle" class="done-label">Completed</text>
+
+    <rect x="500" y="348" width="616" height="96" rx="10" class="card"/>
+    <circle cx="534" cy="396" r="13" fill="none" stroke="#6b3a1f" stroke-width="2"/>
+    <text x="534" y="401" text-anchor="middle" font-size="12" fill="#6b3a1f" font-weight="bold">2</text>
+    <text x="562" y="384" class="h2">Complete Your Profile</text>
+    <text x="562" y="404" class="small">Placeholder description: add your contact info, practice address, and license</text>
+    <text x="562" y="419" class="small">details so clients can find you.</text>
+    <rect x="952" y="378" width="140" height="38" rx="6" class="btn"/>
+    <text x="1022" y="402" text-anchor="middle" class="btntxt">Start Profile</text>
+
+    <rect x="500" y="460" width="616" height="84" rx="10" class="card"/>
+    <circle cx="534" cy="502" r="13" fill="none" stroke="#c9bd9c" stroke-width="2"/>
+    <text x="534" y="507" text-anchor="middle" font-size="12" fill="#c9bd9c" font-weight="bold">3</text>
+    <text x="562" y="494" class="h2" fill="#9a8c68">Schedule Orientation</text>
+    <text x="562" y="514" class="small">Placeholder description: book a session with a program specialist. Unlocks after</text>
+    <text x="562" y="529" class="small">your profile is complete.</text>
+    <rect x="1006" y="484" width="86" height="22" rx="11" fill="#ece3cd"/>
+    <text x="1049" y="499" text-anchor="middle" class="lock-label">Locked</text>
+  </g>
+
+  <!-- flow arrow -->
+  <line x1="620" y1="818" x2="620" y2="856" stroke="#bbb091" stroke-width="2.5"/>
+  <path d="M620 860 l-7 -11 h14 z" fill="#bbb091"/>
+
+  <!-- ================= FRAME 2 : PROFILE FORM ================= -->
+  <text x="10" y="888" class="anno">2. Profile form</text>
+  <g transform="translate(0,890)">
+    <rect x="10" y="10" width="1220" height="770" rx="4" class="frame"/>
+
+    <path d="M10 14 h200 v762 h-200 a4 4 0 0 1 -4 -4 v-754 a4 4 0 0 1 4 -4 z" class="sidebar"/>
+    <text x="34" y="52" class="logo">PARTNER HUB</text>
+    <text x="34" y="72" class="small">Therapist Portal</text>
+    <line x1="34" y1="96" x2="186" y2="96" stroke="#e0d5ba" stroke-width="1.5"/>
+    <rect x="26" y="118" width="168" height="36" rx="8" class="nav-active"/>
+    <rect x="42" y="128" width="12" height="14" rx="2" fill="none" stroke="#ffffff" stroke-width="1.4"/>
+    <path d="M45 135 l3 3 5 -6" stroke="#ffffff" stroke-width="1.4" fill="none"/>
+    <text x="64" y="141" class="navtxt">Setup</text>
+
+    <text x="500" y="62" class="h2lg">Address Information</text>
+
+    <text x="500" y="100" class="q">What is your address?*</text>
+    <rect x="500" y="116" width="616" height="46" rx="5" class="field-focus"/>
+    <text x="514" y="131" class="flabel">ADDRESS LINE 1 *</text>
+    <text x="514" y="150" class="body">123 Sample St</text>
+    <rect x="500" y="174" width="616" height="46" rx="5" class="field"/>
+    <text x="514" y="202" class="small">Address Line 2</text>
+    <rect x="500" y="232" width="300" height="46" rx="5" class="field"/>
+    <text x="514" y="247" class="flabel">CITY *</text>
+    <text x="514" y="266" class="body">Sample City</text>
+    <rect x="818" y="232" width="140" height="46" rx="5" class="field"/>
+    <text x="832" y="247" class="flabel">STATE *</text>
+    <text x="832" y="266" class="body">CA</text>
+    <path d="M938 252 l6 7 6 -7" fill="none" stroke="#8a7c5e" stroke-width="1.6"/>
+    <rect x="976" y="232" width="140" height="46" rx="5" class="field"/>
+    <text x="990" y="247" class="flabel">ZIP CODE *</text>
+    <text x="990" y="266" class="body">00000</text>
+
+    <text x="500" y="330" class="q">Do you work from a commercial office that is different from your</text>
+    <text x="500" y="349" class="q">home address?*</text>
+    <rect x="500" y="368" width="616" height="46" rx="5" class="choice-sel"/>
+    <text x="520" y="396" class="choicetxt">Yes</text>
+    <rect x="500" y="426" width="616" height="46" rx="5" class="choice"/>
+    <text x="520" y="454" class="choicetxt">No</text>
+
+    <text x="500" y="520" class="q">What is your workplace office address?*</text>
+    <rect x="500" y="536" width="616" height="46" rx="5" class="field"/>
+    <text x="514" y="551" class="flabel">ADDRESS LINE 1 *</text>
+    <text x="514" y="570" class="body">456 Sample Ave</text>
+    <rect x="500" y="594" width="616" height="46" rx="5" class="field"/>
+    <text x="514" y="609" class="flabel">ADDRESS LINE 2</text>
+    <text x="514" y="628" class="body">Unit 909</text>
+    <rect x="500" y="652" width="300" height="46" rx="5" class="field"/>
+    <text x="514" y="667" class="flabel">CITY *</text>
+    <text x="514" y="686" class="body">Sample City 2</text>
+    <rect x="818" y="652" width="140" height="46" rx="5" class="field"/>
+    <text x="832" y="667" class="flabel">STATE *</text>
+    <text x="832" y="686" class="body">CA</text>
+    <path d="M938 672 l6 7 6 -7" fill="none" stroke="#8a7c5e" stroke-width="1.6"/>
+    <rect x="976" y="652" width="140" height="46" rx="5" class="field"/>
+    <text x="990" y="667" class="flabel">ZIP CODE *</text>
+    <text x="990" y="686" class="body">00001</text>
+
+    <rect x="966" y="722" width="150" height="40" rx="6" class="btn"/>
+    <text x="1041" y="747" text-anchor="middle" class="btntxt">Save &amp; Continue</text>
+  </g>
+</svg>
