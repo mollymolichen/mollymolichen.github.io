@@ -790,6 +790,22 @@ body.project-page .project-preview {
 	border: none;
 }
 
+/* Equal-height tiles within a row (desktop only; columns stack on mobile) */
+@media (min-width: 992px) {
+	.row-equal {
+		display: flex;
+	}
+
+	.row-equal > [class*="col-"] {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row-equal > [class*="col-"] > .round {
+		flex: 1;
+	}
+}
+
 /* Footer social icons: space them out */
 .social-icons li {
 	margin: 0 8px;

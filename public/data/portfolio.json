@@ -32,7 +32,7 @@
         {
           "title": "Daily Dashboard for Therapists",
           "status": {
-            "label": "Data Insights"
+            "label": "Analytics"
           },
           "problem": "Workflows spread across 4+ disparate systems; current daily email has stale data and &lt;10% click rate despite &gt;85% open rate.",
           "metrics": "Primary: Therapist NPS",
@@ -52,7 +52,7 @@
         {
           "title": "Manage Your Caseload",
           "status": {
-            "label": "Practice Management"
+            "label": "Healthcare"
           },
           "problem": "Therapists navigate 10+ disconnected systems to find basic client info; no accurate centralized caseload view in Therapist Portal.",
           "metrics": "Primary: Appointment no-shows<br />Secondary: Therapist NPS",
@@ -62,7 +62,7 @@
         {
           "title": "Multi-State Practice",
           "status": {
-            "label": "Practice Management"
+            "label": "Healthcare"
           },
           "problem": "Therapists licensed in multiple states can only practice in one, limiting supply in new markets and national payer attractiveness.",
           "metrics": "Increase supply within our existing network by 10%",
@@ -72,12 +72,32 @@
         {
           "title": "In-Person Appointments",
           "status": {
-            "label": "Practice Management"
+            "label": "Healthcare"
           },
           "problem": "40%+ of therapy clients prefer in-person care, but we don't offer any in-person appointments.",
           "metrics": "Increase supply within our existing network by 15%",
           "solution": "Our EHR and provider-facing tooling now displays in-person appointment options. We updated our billing system to differentiate between in-person and telehealth appointment claims.",
           "prototypeUrl": "../images/in_person.svg"
+        },
+        {
+          "title": "Zingo: An App for Solo Travelers",
+          "status": {
+            "label": "Travel"
+          },
+          "problem": "Solo travelers have a hard time finding activities and events to do in a new city.",
+          "metrics": "App usage",
+          "solution": "Enter Zingo, an app tailored for solo travelers to meet others with common travel plans. It's a social network for travelers to find events and activities to do in a new city.",
+          "prototypeUrl": "https://the-weekendr.web.app/"
+        },
+        {
+          "title": "Lend a Hand: Social Media Content Moderation",
+          "status": {
+            "label": "Social Media"
+          },
+          "problem": "As social media becomes more pervasive in our daily lives, the more information people choose to share online. For some users struggling with their mental health, sharing details about their situation can be cathartic. For others, seeing these details can be triggering and even detrimental. Those who are actively at risk of self-harm or suicidal ideation need immediate support.",
+          "metrics": "App usage",
+          "solution": "Lend a Hand is a Chrome extension that serves as a preventative safety net to redirect users who are at risk of self-harm or suicidal ideation to live-time resources and support.",
+          "prototypeUrl": "https://docs.google.com/presentation/d/137lLTunw2p6x7uefesHlBdUwL_pF8NbVeT1BFlUbs9E/edit?usp=sharing"
         }
       ]
     },
@@ -153,7 +173,7 @@
         {
           "title": "Faster Invoice Processing",
           "status": {
-            "label": "Payments"
+            "label": "Finance"
           },
           "problem": "Since we run a bimonthly payroll, therapists get paid on different days of the week. Our contracted therapists rely on consistent pay dates.",
           "metrics": "Primary: Time to pay",
@@ -163,7 +183,7 @@
         {
           "title": "Streamline Payment Infrastructure For Faster Payouts",
           "status": {
-            "label": "Payments"
+            "label": "Finance"
           },
           "problem": "Each appointment required 6+ hours to sync between our systems before it could be processed for payment, requiring 15+ hrs of manual intervention per pay period.",
           "metrics": "Primary: Time to sync (6 hrs → 20 minutes)<br />Secondary: Reduce ZD tickets by 50%",
@@ -173,7 +193,7 @@
         {
           "title": "CRM for White-Glove Client Leads",
           "status": {
-            "label": "Operations"
+            "label": "Onboarding"
           },
           "problem": "To match a single client to a therapist, our white-glove care navigation team used 5+ spreadsheets to track client info and preferences. This process was tedious, taking 2 hours to match a client to a therapist. Our teams also couldn't track a client's progress through care after the initial match.",
           "metrics": "Time To Match (2 hours → 30 minutes)",
