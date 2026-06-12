@@ -789,3 +789,19 @@ body.project-page .project-preview {
 	height: 100%;
 	border: none;
 }
+
+/* Footer social icons: space them out */
+.social-icons li {
+	margin: 0 8px;
+}
+
+/* Image prototypes (.png): scale to container width so they fit on mobile */
+.project-prototype-frame--image {
+	height: auto;
+}
+
+.project-prototype-frame--image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}

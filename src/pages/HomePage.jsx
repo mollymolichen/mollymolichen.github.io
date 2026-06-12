@@ -99,6 +99,19 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
+          <div className="col-md-4 col-sm-12">
+            <div className="skills round" id="skills">
+              <h2 className="accent">Contact</h2>
+              <p>{data.contact.intro}</p>
+              <ul>
+                {data.contact.links.map((link) => (
+                  <li key={link.label}>
+                    <strong>{link.label}: </strong><a href={link.href} target="_blank"><i className={link.icon}></i></a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

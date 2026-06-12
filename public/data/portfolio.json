@@ -10,7 +10,7 @@
       "subtitle": "A curated portfolio of consumer applications I've had the opportunity to work on across the B2C healthcare and technology industries. Click on any tile to learn more about each project.",
       "cards": [
         {
-          "title": "Set Your Working Hours",
+          "title": "Scheduling: Set Your Working Hours",
           "status": {
             "label": "Scheduling"
           },
@@ -20,7 +20,7 @@
           "prototypeUrl": "https://therapisthub.lovable.app/availability"
         },
         {
-          "title": "Simplified Availability Management",
+          "title": "Scheduling: Enter Your Availability in 3 Clicks",
           "status": {
             "label": "Scheduling"
           },
@@ -30,7 +30,7 @@
           "prototypeUrl": "https://therapisthub.lovable.app/availability"
         },
         {
-          "title": "Therapist Daily Dashboard",
+          "title": "Daily Dashboard for Therapists",
           "status": {
             "label": "Data Insights"
           },
@@ -40,7 +40,7 @@
           "prototypeUrl": "https://therapisthub.lovable.app/dashboard-v2"
         },
         {
-          "title": "Proactive QA For Clinical Excellence",
+          "title": "QA: Bulk Clinical Note Review",
           "status": {
             "label": "QA"
           },
@@ -50,7 +50,7 @@
           "prototypeUrl": "https://clinicalnoteqa.lovable.app/"
         },
         {
-          "title": "Manage Your Active Clients",
+          "title": "Manage Your Caseload",
           "status": {
             "label": "Practice Management"
           },
@@ -66,7 +66,8 @@
           },
           "problem": "Therapists licensed in multiple states can only practice in one, limiting supply in new markets and national payer attractiveness.",
           "metrics": "Increase supply within our existing network by 10%",
-          "solution": "Our Therapist Portal and EHR now supports updating schedules and billing claims for multiple states. This expands the number of covered lives per therapist."
+          "solution": "Our Therapist Portal and EHR now supports updating schedules and billing claims for multiple states. This expands the number of covered lives per therapist.",
+          "prototypeUrl": "../images/multi_state.svg"
         },
         {
           "title": "In-Person Appointments",
@@ -75,7 +76,8 @@
           },
           "problem": "40%+ of therapy clients prefer in-person care, but we don't offer any in-person appointments.",
           "metrics": "Increase supply within our existing network by 15%",
-          "solution": "Our EHR and provider-facing tooling now displays in-person appointment options. We updated our billing system to differentiate between in-person and telehealth appointment claims."
+          "solution": "Our EHR and provider-facing tooling now displays in-person appointment options. We updated our billing system to differentiate between in-person and telehealth appointment claims.",
+          "prototypeUrl": "../images/in_person.svg"
         }
       ]
     },
@@ -89,7 +91,7 @@
       "subtitle": "A curated portfolio of business integrations I've had the opportunity to work on across the B2C healthcare and technology industries. Click on any tile to learn more about each project.",
       "cards": [
         {
-          "title": "Two-Way Google Calendar Sync",
+          "title": "Google Calendar Integration",
           "status": {
             "label": "Calendar Integrations"
           },
@@ -99,7 +101,7 @@
           "prototypeUrl": "https://therapisthub.lovable.app/availability?connectCalendar=true"
         },
         {
-          "title": "Self-Service Zendesk Support",
+          "title": "Zendesk Support Chatbot",
           "status": {
             "label": "Support"
           },
@@ -109,7 +111,7 @@
           "prototypeUrl": "https://therapisthub.lovable.app/dashboard-v2"
         },
         {
-          "title": "Support Messaging For Therapists",
+          "title": "Streamlined Zendesk Support Queues",
           "status": {
             "label": "Support"
           },
@@ -119,14 +121,14 @@
           "prototypeUrl": "https://therapisthub.lovable.app/messages"
         },
         {
-          "title": "Build a Scalable Relational Therapist Database",
+          "title": "Therapist Database: A Single Source of Truth",
           "status": {
             "label": "Business Architecture"
           },
-          "problem": "**Therapist data lacks a single source of truth, fragmented across Airtable, Zoho, and Zapier with no defined schema — causing recurring sync failures, operational brittleness, and reliance on manual file uploads.",
+          "problem": "Therapist data lacks a single source of truth, fragmented across Airtable, Zoho, and Zapier with no defined schema — causing recurring sync failures, operational brittleness, and reliance on manual file uploads.",
           "metrics": "Primary: Number of systems required to process a new therapist record",
           "solution": "We built a new relational SQL database as the internal source of truth for therapist data, standardizing the data coming from the upstream Airtable integration. This new database is a single point of truth for therapist data across all therapist directories and internal booking pages, replacing the fragmented Airtable, Zoho, and Zapier integrations.",
-          "prototypeUrl": "../images/sanitized_architecture_diagram.svg"
+          "prototypeUrl": "../images/therapist_database.png"
         },
         {
           "title": "Onboard Partner Therapist Network",
@@ -136,20 +138,20 @@
           "problem": "We needed to onboard 10K+ therapists from a new partnership network, but our current onboarding process didn't scale to this volume.",
           "metrics": "Primary: Number of therapists onboarded",
           "solution": "We reused our exisitng Tellescope CRM instance to build no-code workflows for therapists to complete enrollment, automate operational workflows (background checks, credentialing, etc.), and receive branded communications.",
-          "prototypeUrl": "https://youtu.be/Qlpg_JNlocE"
+          "prototypeUrl": "../images/partner_onboarding_flow.svg"
         },
         {
-          "title": "Speed Up Time to Onboard",
+          "title": "Faster New Hire Onboarding",
           "status": {
             "label": "Onboarding"
           },
           "problem": "Therapist onboarding requires therapists to navigate 6+ systems, lacks the visibility for staff to trace progress end-to-end, and takes 47 days on average. The process is cumbersome enough to cause significant attrition.",
           "metrics": "Primary: Time to onboard (47 → 30 days).",
           "solution": "We implemented a bidirectional sync between our Therapist Database and Tellescope CRM, where Tellescope is used as an environment to store therapist lead data. This enables us to retire Airtable upstream and integrate Tellescope as the only CRM for provider information.",
-          "prototypeUrl": "https://youtu.be/2Xk3OF_0U2g"
+          "prototypeUrl": "../images/new_hire_onboarding.png"
         },
         {
-          "title": "Move to a Biweekly Pay Schedule",
+          "title": "Faster Invoice Processing",
           "status": {
             "label": "Payments"
           },
@@ -169,7 +171,7 @@
           "prototypeUrl": "https://youtu.be/JSqL4u_WKHA"
         },
         {
-          "title": "CRM to Streamline White-Glove Matching",
+          "title": "CRM for White-Glove Client Leads",
           "status": {
             "label": "Operations"
           },

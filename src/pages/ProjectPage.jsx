@@ -143,6 +143,7 @@ export default function ProjectPage() {
                       {card.prototypeUrl && (() => {
                         const embedSrc = toEmbedUrl(card.prototypeUrl);
                         const isYouTube = embedSrc.includes('youtube.com/embed/');
+                        const isImage = /\.png(\?|#|$)/i.test(card.prototypeUrl);
                         return (
                           <div className="project-prototype-section">
                             <div className="project-prototype-header">
@@ -158,15 +159,23 @@ export default function ProjectPage() {
                                 Open in new tab ↗
                               </a>
                             </div>
-                            <div className="project-prototype-frame">
-                              <iframe
-                                src={embedSrc}
-                                title={`${card.title} prototype`}
-                                {...(!isYouTube && { sandbox: 'allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation' })}
-                                {...(!isYouTube && { referrerPolicy: 'no-referrer' })}
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                              />
+                            <div className={`project-prototype-frame${isImage ? ' project-prototype-frame--image' : ''}`}>
+                              {isImage ? (
+                                <img
+                                  src={card.prototypeUrl}
+                                  alt={`${card.title} prototype`}
+                                  loading="lazy"
+                                />
+                              ) : (
+                                <iframe
+                                  src={embedSrc}
+                                  title={`${card.title} prototype`}
+                                  {...(!isYouTube && { sandbox: 'allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation' })}
+                                  {...(!isYouTube && { referrerPolicy: 'no-referrer' })}
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  allowFullScreen
+                                />
+                              )}
                             </div>
                           </div>
                         );
