@@ -1,0 +1,199 @@
+<svg width="1000" height="723" viewBox="0 0 2000 1446" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f1f1f"/>
+    </marker>
+    <marker id="arrC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2BD9D9"/>
+    </marker>
+  </defs>
+
+  <!-- background card -->
+  <rect x="2" y="2" width="1996" height="1442" rx="14" fill="#F7F7F8" stroke="#E2E2E2" stroke-width="2"/>
+  <rect x="26" y="24" width="118" height="32" rx="6" fill="#FFFFFF" stroke="#D8D8D8"/>
+  <text x="85" y="45" font-size="15" text-anchor="middle" fill="#333">Section 14</text>
+
+  <!-- ================= EDGES (black) ================= -->
+  <g stroke="#1f1f1f" stroke-width="2.5" fill="none">
+    <!-- Marketing / Onboarding -> Airtable UI -->
+    <path d="M168,575 L285,575 L285,678 L368,678" marker-end="url(#arrB)"/>
+    <path d="M168,840 L285,840 L285,678"/>
+    <!-- Airtable data -> Airtable UI -->
+    <path d="M631,678 L545,678" marker-end="url(#arrB)"/>
+    <!-- Therapist -> Zoho/Zapier -> Airtable data -->
+    <path d="M691,344 L691,398" marker-end="url(#arrB)"/>
+    <path d="M691,498 L691,618" marker-end="url(#arrB)"/>
+    <!-- Airtable data - CSV - Therapist database -->
+    <path d="M751,675 L785,675"/>
+    <path d="M945,672 L973,678" marker-end="url(#arrB)"/>
+    <!-- Therapist database -> Marketing web site -->
+    <path d="M1036,622 L1036,349" marker-end="url(#arrB)"/>
+    <!-- portals down-left to the vertical line -->
+    <path d="M1303,345 L1303,410 L1036,410"/>
+    <path d="M1554,345 L1554,438 L1036,438"/>
+    <!-- Therapist (top) -> Therapist Portal view -->
+    <path d="M1301,181 L1301,226" marker-end="url(#arrB)"/>
+    <!-- Marketing (top right) -> Staff Portal view -->
+    <path d="M1809,236 L1809,200 L1554,200 L1554,226" marker-end="url(#arrB)"/>
+    <!-- EHR automated account creation -> EHR -->
+    <path d="M1657,737 L1791,737" marker-end="url(#arrB)"/>
+    <!-- right-side actors -> Retool -->
+    <path d="M1545,1010 L1325,1010 L1325,1345 L1545,1345"/>
+    <path d="M1545,1180 L1325,1180"/>
+    <path d="M1325,1152 L1122,1152" marker-end="url(#arrB)"/>
+  </g>
+  <circle cx="1210" cy="1152" r="4.5" fill="#1f1f1f"/>
+
+  <!-- ================= EDGES (cyan) ================= -->
+  <g stroke="#2BD9D9" stroke-width="2.5" fill="none">
+    <!-- Therapist database -> EHR automated account creation -->
+    <path d="M1093,682 L1523,734" marker-end="url(#arrC)"/>
+    <!-- periodic sync (dashed) -> Client database -->
+    <path d="M1305,705 L1305,545 L1505,545" stroke-dasharray="8 7" marker-end="url(#arrC)"/>
+    <!-- Retool <-> Therapist database -->
+    <path d="M1036,1114 L1036,740" marker-start="url(#arrC)" marker-end="url(#arrC)"/>
+  </g>
+
+  <!-- ================= NODES ================= -->
+  <!-- Triangles (actors) -->
+  <g stroke="#1f1f1f" stroke-width="2.5">
+    <polygon points="128,497 63,607 193,607" fill="#F8B49E"/>
+    <polygon points="128,762 63,872 193,872" fill="#E9F6A8"/>
+    <polygon points="691,232 626,342 756,342" fill="#D8C9F0"/>
+    <polygon points="1301,67 1236,177 1366,177" fill="#D8C9F0"/>
+    <polygon points="1809,232 1744,342 1874,342" fill="#F8B49E"/>
+    <polygon points="1597,927 1532,1037 1662,1037" fill="#E9F6A8"/>
+    <polygon points="1597,1112 1532,1222 1662,1222" fill="#F8B49E"/>
+    <polygon points="1597,1287 1532,1397 1662,1397" fill="#D8C9F0"/>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#1f1f1f">
+    <text x="128" y="590">Marketing</text>
+    <text x="128" y="855">Onboarding</text>
+    <text x="691" y="325">Therapist</text>
+    <text x="1301" y="160">Therapist</text>
+    <text x="1809" y="325">Marketing</text>
+    <text x="1597" y="1020">Onboarding</text>
+    <text x="1597" y="1205">Marketing</text>
+    <text x="1597" y="1380">Therapist</text>
+  </g>
+
+  <!-- Subroutine boxes -->
+  <g stroke="#1f1f1f" stroke-width="2.5" fill="#FFFFFF">
+    <rect x="621" y="402" width="140" height="96" rx="32"/>
+    <line x1="637" y1="408" x2="637" y2="492"/>
+    <line x1="745" y1="408" x2="745" y2="492"/>
+
+    <rect x="971" y="230" width="130" height="115" rx="34"/>
+    <line x1="987" y1="237" x2="987" y2="338"/>
+    <line x1="1085" y1="237" x2="1085" y2="338"/>
+
+    <rect x="1238" y="230" width="130" height="115" rx="34"/>
+    <line x1="1254" y1="237" x2="1254" y2="338"/>
+    <line x1="1352" y1="237" x2="1352" y2="338"/>
+
+    <rect x="1489" y="230" width="130" height="115" rx="34"/>
+    <line x1="1505" y1="237" x2="1505" y2="338"/>
+    <line x1="1603" y1="237" x2="1603" y2="338"/>
+  </g>
+  <g stroke="#1f1f1f" stroke-width="2.5" fill="#7DE9E6">
+    <rect x="1527" y="677" width="130" height="120" rx="36"/>
+    <line x1="1543" y1="685" x2="1543" y2="789"/>
+    <line x1="1641" y1="685" x2="1641" y2="789"/>
+
+    <rect x="1795" y="690" width="120" height="90" rx="30"/>
+    <line x1="1811" y1="697" x2="1811" y2="773"/>
+    <line x1="1899" y1="697" x2="1899" y2="773"/>
+  </g>
+
+  <!-- Cylinders -->
+  <g stroke="#1f1f1f" stroke-width="2.5">
+    <path d="M631,636 a60,14 0 0,1 120,0 v80 a60,14 0 0,1 -120,0 z" fill="#FFFFFF"/>
+    <path d="M631,636 a60,14 0 0,0 120,0" fill="none"/>
+    <path d="M977,640 a58,14 0 0,1 116,0 v80 a58,14 0 0,1 -116,0 z" fill="#7DE9E6"/>
+    <path d="M977,640 a58,14 0 0,0 116,0" fill="none"/>
+    <path d="M1511,508 a57,14 0 0,1 114,0 v78 a57,14 0 0,1 -114,0 z" fill="#FFFFFF"/>
+    <path d="M1511,508 a57,14 0 0,0 114,0" fill="none"/>
+  </g>
+
+  <!-- Trapezoids (UIs) -->
+  <polygon points="375,653 535,628 535,730 375,730" fill="#FFFFFF" stroke="#1f1f1f" stroke-width="2.5"/>
+  <polygon points="956,1135 1116,1110 1116,1212 956,1212" fill="#7DE9E6" stroke="#1f1f1f" stroke-width="2.5"/>
+
+  <!-- Document (CSV) -->
+  <path d="M785,620 L945,620 L945,712 C895,742 845,688 785,716 Z" fill="#FFFFFF" stroke="#1f1f1f" stroke-width="2.5"/>
+
+  <!-- ================= NODE LABELS ================= -->
+  <g font-size="17" text-anchor="middle" fill="#1f1f1f">
+    <text x="455" y="697">Airtable UI</text>
+    <text x="691" y="456">Zoho/Zapier</text>
+    <text x="691" y="688">Airtable data</text>
+    <text x="865" y="672">CSV</text>
+    <text x="1035" y="676">Therapist</text>
+    <text x="1035" y="698">database</text>
+    <text x="1036" y="282">Marketing</text>
+    <text x="1036" y="304">web site</text>
+    <text x="1303" y="262">Read-only</text>
+    <text x="1303" y="284">view in</text>
+    <text x="1303" y="306">Therapist</text>
+    <text x="1303" y="328">Portal</text>
+    <text x="1554" y="270">Read-only</text>
+    <text x="1554" y="292">view in</text>
+    <text x="1554" y="314">Staff Portal</text>
+    <text x="1568" y="544">Client</text>
+    <text x="1568" y="566">database</text>
+    <text x="1592" y="712">EHR</text>
+    <text x="1592" y="734">automated</text>
+    <text x="1592" y="756">account</text>
+    <text x="1592" y="778">creation</text>
+    <text x="1855" y="742">EHR</text>
+    <text x="1036" y="1180">Retool</text>
+  </g>
+
+  <!-- ================= EDGE LABELS / ANNOTATIONS ================= -->
+  <g font-size="15" text-anchor="middle" fill="#1f1f1f">
+    <text x="283" y="552">read-only</text>
+    <text x="283" y="571">for select fields</text>
+    <text x="283" y="742">read-only</text>
+    <text x="283" y="761">for select fields</text>
+  </g>
+
+  <g font-size="16" text-anchor="middle" fill="#1f1f1f" font-weight="bold">
+    <text x="455" y="548">Any fields that are edited</text>
+    <text x="455" y="570">in Retool will be read</text>
+    <text x="455" y="592">only in Airtable</text>
+  </g>
+
+  <g text-anchor="middle" fill="#1f1f1f">
+    <text x="1300" y="582" font-size="16" font-weight="bold">(4) Periodic sync,</text>
+    <text x="1300" y="603" font-size="16">to be removed</text>
+    <text x="1300" y="623" font-size="16">in far future</text>
+  </g>
+
+  <g text-anchor="middle" fill="#1f1f1f">
+    <rect x="1198" y="652" width="270" height="14" fill="#F7F7F8" opacity="0"/>
+    <text x="1330" y="666" font-size="16" font-weight="bold">(5) No more manual</text>
+    <text x="1330" y="686" font-size="16" font-weight="bold">cleanup by IT</text>
+    <text x="1330" y="708" font-size="16">EHR account provisioning</text>
+    <text x="1330" y="728" font-size="16">triggered by Therapist DB. IT no</text>
+    <text x="1330" y="748" font-size="16">longer has to use CSV uploads to</text>
+    <text x="1330" y="768" font-size="16">provision new therapists.</text>
+  </g>
+
+  <g font-size="16" fill="#1f1f1f">
+    <text x="875" y="888" font-weight="bold">(3a) Data update</text>
+    <text x="875" y="910">Staff updates made in</text>
+    <text x="875" y="930">Retool will sync</text>
+    <text x="875" y="950">automatically to Client DB</text>
+
+    <text x="1080" y="888" font-weight="bold">(3b) Mimic</text>
+    <text x="1080" y="910" font-weight="bold">Airtable automations</text>
+    <text x="1080" y="932">Logic in Client DB will email</text>
+    <text x="1080" y="952">CCLs and Marketing when</text>
+    <text x="1080" y="972">there are pending tasks</text>
+  </g>
+
+  <g font-size="16" text-anchor="middle" fill="#1f1f1f" font-weight="bold">
+    <text x="1206" y="1118">(2) Staff AND</text>
+    <text x="1206" y="1138">therapist self-serve</text>
+  </g>
+</svg>
