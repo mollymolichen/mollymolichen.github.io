@@ -29,7 +29,7 @@ export default function Navbar() {
               <div className="site-nav-inner round">
                 <ul className="site-nav-list">
                   <li>
-                    <Link to="/" state={{ scrollTo: 'experiences' }} class="lazydog">Experience</Link>
+                    <Link to="/" state={{ scrollTo: 'experiences' }} class="lazydog">Home</Link>
                   </li>
                   <li className={`site-nav-dropdown-wrap${open ? ' is-open' : ''}`} ref={wrapRef} class="lazydog">
                     <a

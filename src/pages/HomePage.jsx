@@ -50,18 +50,19 @@ export default function HomePage() {
                   {edu.techLinks.map((link, i) => (
                     <span key={link.href}>
                       <a href={link.href} target="_blank">{link.text}</a>
+                      {/*Adds a comma between each link, except for the last one*/}
                       {i < edu.techLinks.length - 1 && ', '}
                     </span>
                   ))}
                 </p>
                 <p className="education-description">
                   <i>Cool projects:</i><br />
-                  {edu.projectLinks.map((link, i) => (
-                    <span key={link.href}>
-                      <a href={link.href} target="_blank">{link.text}</a>
-                      {i < edu.projectLinks.length - 1 && ', '}
-                    </span>
-                  ))}
+                  <span key="/#/portfolio?tab=consumer-apps">
+                    <a href="/#/portfolio?tab=consumer-apps">Consumer Apps, </a>
+                  </span>
+                  <span key="/#/portfolio?tab=business-integrations">
+                    <a href="/#/portfolio?tab=business-integrations">Business Integrations</a>
+                  </span>
                 </p>
               </div>
             </div>
