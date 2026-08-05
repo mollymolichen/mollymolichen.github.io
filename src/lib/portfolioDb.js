@@ -2,6 +2,7 @@ const DB_NAME = 'molly_portfolio_local';
 const DB_VERSION = 1;
 const STORE = 'portfolioSnapshot';
 
+/*Open the IndexedDB database, creating it if it doesn't exist. Returns a Promise that resolves to the database instance.*/
 function openDb() {
   return new Promise((resolve, reject) => {
     const req = indexedDB.open(DB_NAME, DB_VERSION);
@@ -14,6 +15,7 @@ function openDb() {
   });
 }
 
+/*Store a JSON string in IndexedDB under the key 'snapshot'.*/
 function putSnapshot(db, jsonText) {
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE, 'readwrite');
@@ -23,6 +25,7 @@ function putSnapshot(db, jsonText) {
   });
 }
 
+/*Retrieve the JSON string stored under the key 'snapshot' in IndexedDB. Returns null if not found.*/
 function getSnapshot(db) {
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE, 'readonly');
@@ -32,6 +35,7 @@ function getSnapshot(db) {
   });
 }
 
+/*Fetch data from static JSON file, and cache it in IndexedDB if available. If the network request fails, throw an error.*/
 function fetchJsonText() {
   return fetch('/data/portfolio.json', { credentials: 'same-origin' }).then((r) => {
     if (!r.ok) throw new Error('portfolio.json HTTP ' + r.status);
@@ -39,6 +43,7 @@ function fetchJsonText() {
   });
 }
 
+/*Load the portfolio payload, either from the network or from IndexedDB if available. If the network request fails, fall back to the cached version in IndexedDB.*/
 export function loadPortfolioPayload() {
   if (!window.indexedDB) {
     return fetchJsonText().then((text) => ({ data: JSON.parse(text), source: 'network-no-idb' }));

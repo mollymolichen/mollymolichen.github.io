@@ -71,7 +71,7 @@ function Card({ card }) {
       <div className="prd-card-body">
         <FieldBlock label="Problem" iconClass="fa-exclamation-circle" html={card.problem || ''} />
         <FieldBlock label="Metrics" iconClass="fa-line-chart" html={card.metrics || ''} />
-        <FieldBlock label="Solution" iconClass="fa-lightbulb-o" html={card.solution || ''} />
+        <FieldBlock label="Solution" iconClass="fa-lightbulb-o" html={card.solutionSummary || ''} />
       </div>
     </div>
   );
