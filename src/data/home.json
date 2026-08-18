@@ -73,13 +73,13 @@
     ]                                                                                                                                                                     
   },   
   "skills": [
-    { "label": "AI Tools", "items": "AI-assisted development (Local AI, Claude Code), Rapid prototyping, Agentic AI, RPA" },
-    { "label": "Integrations", "items": "Tellescope, Tray.AI, Zendesk, Salesforce, Nylas, Cobalt, Felicity AI" },
-    { "label": "Languages", "items": "Python, C#, Java, TypeScript, PowerShell, Bash" },
-    { "label": "Frameworks", "items": "Angular, Vue, React" },
-    { "label": "Cloud and Infra", "items": "Azure, AWS, GCP, Kubernetes, Docker, AKS" },
-    { "label": "Data and Analytics", "items": "SQL, PostgreSQL, Kusto, Tableau, Iterable, Hex, Mixpanel" },
-    { "label": "Industries", "items": "Healthcare, Big Tech, Startups (Series A-C), B2B, B2C, Legal" },
+    { "label": "AI", "items": "AI-assisted development (Claude Code, Cursor, Codex, Ollama), Agentic AI (LangChain Fleet, LangSmith Deep Agents, Tray.ai), Rapid prototyping" },
+    { "label": "Cloud and Infra", "items": "Azure, AWS, GCP, Kubernetes, Docker" },
+    { "label": "Frameworks", "items": "React, Angular, Vue" },
+    { "label": "Languages", "items": "Python, C#, Java, TypeScript" },
+    { "label": "Integrations", "items": "Tellescope, Airtable, Zendesk, Salesforce" },
+    { "label": "Data and Analytics", "items": "SQL, PostgreSQL, Tableau, Hex, Mixpanel, Iterable" },
+    { "label": "Industries", "items": "Healthcare, Big Tech, Startups, B2B, B2C, Legal" },
     { "label": "Leadership", "items": "Cross-functional team leadership, stakeholder management" }
   ]
 }
