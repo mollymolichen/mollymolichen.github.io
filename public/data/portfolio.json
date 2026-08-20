@@ -10,6 +10,17 @@
       "subtitle": "A curated portfolio of consumer applications I've had the opportunity to work on across the B2C healthcare and technology industries. Click on any tile to learn more about each project.",
       "cards": [
         {
+          "title": "AI Agent: Interior Designer",
+          "status": {
+            "label": "Agentic AI"
+          },
+          "problem": "Consumers want to design their homes, but they don't have the time or expertise to do so.",
+          "metrics": "Primary: Time spent planning a home redesign<br />Secondary: Increased budget visibility",
+          "solutionSummary": "Consumers can now use an AI agent to design their homes in a fraction of the time it would take to do so manually.",
+          "solution": "Consumers can now use an AI agent to design their homes. I built this agent using LangChain Fleet. The agent takes into account user preferences, budget, and existing home layout to generate design options. Users can review, modify, and approve designs, significantly reducing the time and effort required for home design.<br><br>The agent uses Tavily web search and Google Slides MCP integration to execute its skillset.<br><br>Watch the video for a live demo!</u>",
+          "prototypeUrl": "https://youtu.be/0zMyNkCm4v4"
+        },
+        {
           "title": "Scheduling: Set Your Working Hours",
           "status": {
             "label": "Scheduling"
