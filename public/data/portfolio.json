@@ -131,6 +131,17 @@
       "subtitle": "A curated portfolio of business integrations I've had the opportunity to work on across the B2C healthcare and technology industries. Click on any tile to learn more about each project.",
       "cards": [
         {
+          "title": "Lead Tracker CRM for Senior Centers",
+          "status": {
+            "label": "Healthcare"
+          },
+          "problem": "Operational teams running referrals for senior living centers are swamped due to high call volume, manual enrollment procedures, high variability between team members, and the lack of standardized information coming from multiple referral sources.",
+          "metrics": "Primary: Time spent to close a lead",
+          "solutionSummary": "Before outreaching a lead, ops team members can pull the latest Talkdesk logs from within Salesforce instead of comparing the call logs manually.",
+          "solution": "Instead of reconciling two data sources (Salesforce, Talkdesk) per phone call, we can pull Talkdesk call logs directly from our leads tracking app. When the lead's status changes in Talkdesk, it will automatically reflect back in the leads tracking app. Team members can also view a summary dashboard on how many leads they closed over the last month (<a style=\"color: #3366cc\" href=\"https://github.com/mollymolichen/lead-tracker-crm\" target=\"_blank\">Github Repo</a>).",
+          "prototypeUrl": "../images/leads.png"
+        },
+        {
           "title": "Google Calendar Integration",
           "status": {
             "label": "Calendar Integrations"
